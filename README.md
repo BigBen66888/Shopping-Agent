@@ -8,7 +8,7 @@
 
 ## 演示
 
-<video src="./演示视频.mp4" controls width="100%"></video>
+[▶ 点击播放 Shopping Agent 网页界面演示视频](./演示视频.mp4)
 
 ## 功能概览
 
