@@ -1,0 +1,139 @@
+{
+  "cases": 3,
+  "completed": 3,
+  "metrics": {
+    "task_success": 0.3333,
+    "unwanted_buy_count": 0,
+    "delegation_rate": 0.0,
+    "parallel_batches": 0,
+    "mean_parallel_speedup": null,
+    "tool_steps_mean": 1.67,
+    "tool_steps_p95": 2.0,
+    "grounded_write_rate": null,
+    "p50_ms": 27444.84,
+    "p95_ms": 30367.752
+  },
+  "rows": [
+    {
+      "case_id": "BN01",
+      "status": "ok",
+      "query": "帮我找一件价格不超过 0.01 比索的全新笔记本电脑。如果没有符合条件的商品，请直接说没有，不要买。",
+      "task": "no_result",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_6H92x1EYEhFdlYDXRPsb4202",
+          "tool": "product_search",
+          "arguments": {
+            "query": "brand new laptop",
+            "budget": 0.01,
+            "category": "laptop",
+            "top_k": 5
+          },
+          "elapsed_ms": 2906.7,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [],
+      "written_grounded": true,
+      "answer": "没有符合条件的商品。搜索结果表明，在 0.01 比索（约合人民币 0.001 元）的预算内没有任何全新笔记本电脑，因此不存在可推荐的商品，也未进行任何下单操作。如果你愿意放宽预算，我可以重新帮你找。",
+      "elapsed_ms": 8076.13
+    },
+    {
+      "case_id": "BN02",
+      "status": "ok",
+      "query": "寻找 0.01 比索以内的无线蓝牙耳机，找不到就如实告诉我，不要加购物车或下单。",
+      "task": "no_result",
+      "success": false,
+      "no_unwanted_buy": true,
+      "product_count": 3,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_OE9nQeEMeW0jiaqRfkqh2592",
+          "tool": "product_search",
+          "arguments": {
+            "query": "wireless bluetooth earbuds",
+            "budget": 0.01,
+            "top_k": 8
+          },
+          "elapsed_ms": 2283.41,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_TbW0zSEiTLJoN7bg80fk0373",
+          "tool": "product_search",
+          "arguments": {
+            "query": "wireless bluetooth earbuds",
+            "top_k": 3
+          },
+          "elapsed_ms": 22724.78,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [],
+      "written_grounded": true,
+      "answer": "如实告知：没有找到 0.01 比索以内的无线蓝牙耳机。\n\n- 按预算 0.01 搜索，结果为空。\n- 放宽预算后，同类无线蓝牙耳机最低价约为 **39.0**，远高于 0.01。\n\n因此该预算内无货，我未加入购物车也未下单。如果你愿意提高预算（例如 40 以上），我可以再帮你筛选几款。",
+      "elapsed_ms": 30692.52
+    },
+    {
+      "case_id": "BN03",
+      "status": "ok",
+      "query": "帮我找价格不超过 0.01 比索的机械键盘，只有真实匹配商品才能展示；没有就说明没有。",
+      "task": "no_result",
+      "success": false,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_teqIKdDgr6BvnVW4F2AZ7490",
+          "tool": "product_search",
+          "arguments": {
+            "query": "mechanical keyboard",
+            "budget": 0.01,
+            "top_k": 8
+          },
+          "elapsed_ms": 2248.22,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_LUI2Yn3KpNVZqs6P1c6M4286",
+          "tool": "product_search",
+          "arguments": {
+            "query": "mechanical keyboard",
+            "top_k": 8
+          },
+          "elapsed_ms": 19504.08,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [],
+      "written_grounded": true,
+      "answer": "没有符合“价格不超过 0.01 比索”的机械键盘。\n\n- 按该价格上限搜索，结果为空（0 件）。\n- 我放宽价格查了一下真实在售的机械键盘，最低价也在 76.68 比索以上（且那款其实是键盘润滑油），真正的机械键盘如 104 键金属面板款为 335 比索起，与 0.01 比索预算相差极大。\n\n所以目前没有真实匹配的商品可展示。如果你愿意，我可以按一个更现实的预算（比如 300–500 比索）帮你筛选合适的机械键盘。",
+      "elapsed_ms": 27444.84
+    }
+  ]
+}

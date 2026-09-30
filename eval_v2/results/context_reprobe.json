@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": "C07",
+    "answer": "先看看有哪些选择。",
+    "finish_reason": "stop",
+    "correct": false
+  },
+  {
+    "case_id": "C08",
+    "answer": "先看看有哪些选择。",
+    "finish_reason": "stop",
+    "correct": false
+  },
+  {
+    "case_id": "C14",
+    "answer": "想先看看有哪些选择。",
+    "finish_reason": "stop",
+    "correct": false
+  }
+]

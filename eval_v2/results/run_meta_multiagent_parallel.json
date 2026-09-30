@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-09-28T12:20:37.231691+08:00",
+  "model": "deepseek-flash",
+  "limit": null,
+  "suite": [
+    "multiagent_parallel"
+  ]
+}

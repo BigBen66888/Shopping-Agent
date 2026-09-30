@@ -1,0 +1,358 @@
+{
+  "cases": 20,
+  "completed": 20,
+  "metrics": {
+    "task_success": 1.0,
+    "unwanted_buy_count": 0,
+    "delegation_rate": 0.0,
+    "p50_ms": 23714.555,
+    "p95_ms": 30996.663
+  },
+  "rows": [
+    {
+      "case_id": "B01",
+      "status": "ok",
+      "query": "查一下我当前购物车里有什么",
+      "task": "cart_read",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state"
+      ],
+      "answer": "你的购物车目前是空的，没有任何商品。\n\n需要我帮你搜索并添加商品吗？可以告诉我想要的品类、预算或其他要求。",
+      "elapsed_ms": 3926.85
+    },
+    {
+      "case_id": "B02",
+      "status": "ok",
+      "query": "看看我以前的订单，不要买东西",
+      "task": "orders_read",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state"
+      ],
+      "answer": "你的历史订单目前是空的（0 条），没有可展示的购买记录。没有任何购买操作发生。\n\n需要的话，我可以帮你查看购物车或收藏夹，或者按你的需求搜索商品。",
+      "elapsed_ms": 3440.71
+    },
+    {
+      "case_id": "B03",
+      "status": "ok",
+      "query": "列出我收藏的商品",
+      "task": "favorites_read",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state"
+      ],
+      "answer": "你的收藏夹目前是空的，没有收藏任何商品。需要我帮你搜索或推荐商品并加入收藏吗？",
+      "elapsed_ms": 3194.42
+    },
+    {
+      "case_id": "B04",
+      "status": "ok",
+      "query": "我之前有哪些长期购物偏好？",
+      "task": "memory_read",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state"
+      ],
+      "answer": "目前你的长期记忆里是空的，没有记录任何长期购物偏好（比如常买的品牌、尺码、颜色或预算区间等）。\n\n如果你愿意，可以现在告诉我你的偏好（例如品牌、尺码、预算、风格），我帮你记下来，之后推荐或下单时就能直接参考。",
+      "elapsed_ms": 3776.15
+    },
+    {
+      "case_id": "B05",
+      "status": "ok",
+      "query": "只查购物车的商品数量，不要修改它",
+      "task": "cart_read",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state"
+      ],
+      "answer": "购物车当前为空，商品数量为 0 件，未做任何修改。需要我帮你搜索或添加商品吗？",
+      "elapsed_ms": 3068.96
+    },
+    {
+      "case_id": "B06",
+      "status": "ok",
+      "query": "查一下订单状态，不要创建订单",
+      "task": "orders_read",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state"
+      ],
+      "answer": "目前你的订单列表为空，没有可查询的订单状态，我也没有创建任何订单。\n\n如果你之前用过其他账号，或者想先看看商品、购物车，我可以继续帮你查。",
+      "elapsed_ms": 3065.07
+    },
+    {
+      "case_id": "B07",
+      "status": "ok",
+      "query": "给我推荐一款无线鼠标，不要直接下单",
+      "task": "search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search"
+      ],
+      "answer": "根据销量和评价热度，最值得推荐的是这款：\n\n**KACOOL 无线鼠标（Bluetooth 5.1 / USB 2.4G 双模）**\n- 价格：¥110\n- 已售 129 件，是候选中销量最高、口碑最稳的一款\n- 可充电、双模连接（蓝牙 5.1 + 2.4GHz USB 接收器），带背光，静音设计\n- 人体工学弧形造型，灵敏度高、操作顺滑，适合笔记本/办公/日常使用\n\n备选：如果你只需要基础办公款、想更省一点，¥90.45 的「2.4G 便携静音办公鼠标（可调 DPI）」也可以看看，但销量较少。\n\n需要我把它加入购物车，还是再看几款对比一下？",
+      "elapsed_ms": 27039.46
+    },
+    {
+      "case_id": "B08",
+      "status": "ok",
+      "query": "找一款便宜的手机充电线，不要购买",
+      "task": "search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search"
+      ],
+      "answer": "找到一款便宜且销量不错的充电线。\n\n**最推荐**：`4531265929` — Original Fast Charging Cable（Micro USB / Type-C），**11 元**，已售 148 件，支持 3A 快充，适配安卓/华为等手机，是本次结果中价格最低、销量最高的一款，性价比最突出。\n\n其他较便宜的还有：26 元的尼龙编织安卓线（`4737852627`）、27 元左右的螺旋 LED 充电线（`350470624`，已售 3 件）。\n\n未做任何购买操作。需要我把它加入购物车，或按接口类型（Micro USB / Type-C / Lightning）再筛一筛吗？",
+      "elapsed_ms": 23844.16
+    },
+    {
+      "case_id": "B09",
+      "status": "ok",
+      "query": "帮我找适用于 Acer Aspire 的笔记本电池，不要下单",
+      "task": "search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search"
+      ],
+      "answer": "找到几款适配 Acer Aspire 的笔记本电池（均未下单）：\n\n- **Acer Aspire 电池 AL14A32**（商品 1906291094，品牌 Acer，¥895）：适配 E14/E15、E5-411/421/471 系列\n- **Acer Aspire 电池 AL12A31/AL12B31 等**（商品 1906292030，品牌 Acer，¥895）：适配 Aspire 725/756/765\n- **Acer Aspire 电池 E5 系列 AL14A32**（商品 1567142503，¥790）：适配 E5-421/571/572/521/531/551、V3-472\n- **Acer Aspire E15/E14 AL14A32**（商品 254124744，¥850）\n- **Acer Aspire AP19B8K**（商品 3905318374，¥1398）：适配 A315-56、A317-52、SF314-42，11.25V/41.76Wh\n- **Battery AC13C34**（商品 326710012，¥1210）：适配 V5-122P、E3-111、V5-132\n- **LPO AS09A41**（商品 4024172786，品牌 LPO，¥1728，5200mAh）：适配 Aspire 5732/7315/7715/4332/4732/5232\n\n笔记本电池必须严格匹配型号，最好按你机器的**具体型号**（如 A515-54、E5-571G）或**原电池型号**（如 AL14A32、AP19B8K）来定。如果预算合适、能给一下你的 Aspire 具体型号或原电池编号，我可以帮你锁定最匹配的那一款；也可以先加入购物车或收藏，需要的话告诉我就行。",
+      "elapsed_ms": 28077.99
+    },
+    {
+      "case_id": "B10",
+      "status": "ok",
+      "query": "找一个适用于 Tecno Camon 30 的钢化膜，给我看看商品",
+      "task": "search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search",
+        "product_search",
+        "get_product_details",
+        "get_product_details",
+        "get_product_details"
+      ],
+      "answer": "为 Tecno Camon 30 找到几款钢化膜，最贴合的一件如下：\n\n**最推荐：Doymarks 9D 全覆盖钢化膜（约 ₱151，已售 6 件）**\n- 明确标注适配 Tecno Camon 30 / 30S 系列\n- 9D 全屏覆盖、边缘到边缘，9H 硬度防刮\n- 高清、防指纹、疏油涂层，抗摔防爆\n\n**其他可选：**\n- **Tecno Camon 30 钢化膜 3合1（约 ₱58，已售 2 件）**——含屏幕钢化膜＋摄像头镜头膜＋碳纤维背膜，适配 Camon 30 5G\n- **Tecno Camon 30 满版哑光/防窥 3合1钢化膜（约 ₱75，已售 1 件）**——全屏覆盖，含防窥/哑光选项及镜头膜\n\n最可能满足你需求的是 **Doymarks 9D 全覆盖钢化膜**：直接适配 Tecno Camon 30、全屏 9H 钢化防护、且销量与口碑最稳。\n\n需要我把它加入购物车或直接下单吗？",
+      "elapsed_ms": 55637.44
+    },
+    {
+      "case_id": "B11",
+      "status": "ok",
+      "query": "找一款无线鼠标并把合适的一件加入购物车，不要下单",
+      "task": "cart_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 1,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "add_to_cart"
+      ],
+      "answer": "已找到并加入购物车（未下单）：\n\n- **KACOOL 无线鼠标（Popcorn）**，110.00 —— 蓝牙 5.1 + 2.4G USB 双模连接，可充电、带背光、静音按键，人体工学弧形设计，需要无线鼠标的核心需求都满足；也是候选里销量最高的一款（129 件）。\n\n购物车里目前就这一件，需要我继续比价、换款或直接下单吗？",
+      "elapsed_ms": 23584.95
+    },
+    {
+      "case_id": "B12",
+      "status": "ok",
+      "query": "找一条手机充电线加入购物车，不要购买",
+      "task": "cart_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 1,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "add_to_cart"
+      ],
+      "answer": "已把一条手机充电线加入购物车（未下单）：\n\n- **3 合 1 USB 充电线**（ID 2740277132），¥45，1.2 米尼龙编织，同时支持 Type-C + Lightning + Micro USB，一拖三设计，兼容 iPhone、三星、华为、小米等机型，可多设备同时快充。\n\n需要我换成别的款式（比如更便宜的单口线），或直接结算下单吗？",
+      "elapsed_ms": 25245.2
+    },
+    {
+      "case_id": "B13",
+      "status": "ok",
+      "query": "找适用于 Acer Aspire 的电池，加一件到购物车，不要下单",
+      "task": "cart_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 1,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search",
+        "read_state",
+        "get_product_details",
+        "add_to_cart"
+      ],
+      "answer": "已加购一件，未下单。\n\n- 商品：Acer Aspire 笔记本电池（适配 725/756/765，型号 AL12A31/AL12B31/AL12B32/AL12B72/AL12X32），品牌 Acer，价格 ₱895。\n- 说明：这是第三方替换电池（非原装），正常使用约续航 2 小时，保修 30 天；官方列表为部分适配型号，若不确认是否匹配你的具体 Aspire 型号，建议先与卖家核实。\n\n需要我帮你核对具体型号兼容性，或直接结算吗？",
+      "elapsed_ms": 26579.7
+    },
+    {
+      "case_id": "B14",
+      "status": "ok",
+      "query": "找一款女式夏季裙子，加到购物车，不要购买",
+      "task": "cart_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 1,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "add_to_cart"
+      ],
+      "answer": "已加入购物车 ✅\n\n- **商品**：Fontaines Summer Dress（女式夏季连衣裙）\n- **价格**：¥139.0\n- **特点**：A 字版型、膝长、无袖、棉质、碎花设计，休闲风格，适合夏季日常穿着\n- **状态**：已放入购物车，未下单购买\n\n需要我帮你再挑同款的其他颜色/尺码，或者对比一下其他候选吗？",
+      "elapsed_ms": 19588.76
+    },
+    {
+      "case_id": "B15",
+      "status": "ok",
+      "query": "找一款骑行用的摩托车座套，加购物车，不要下单",
+      "task": "cart_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 1,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "add_to_cart"
+      ],
+      "answer": "已加入购物车（未下单）：\n\n**摩托车座垫套** — ¥163.38\n- PU 皮革材质，耐磨防护\n- 透气柔性，长途骑行更舒适\n- 防滑设计，骑行中不易位移\n- 附带储物功能，可放随身小物\n- 通用尺寸，适配多数摩托/踏板车，安装方便\n\n这款最贴合你“骑行用”的需求，兼顾舒适、防滑与保护。需要的话我可以继续更换型号或直接下单。",
+      "elapsed_ms": 29699.78
+    },
+    {
+      "case_id": "B16",
+      "status": "ok",
+      "query": "找一个 Tecno Camon 30 钢化膜加入购物车，不要下单",
+      "task": "cart_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 1,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "get_product_details",
+        "add_to_cart"
+      ],
+      "answer": "已加入购物车，未下单。\n\n- 商品：Tecno Camon 30 钢化膜（通用型号，兼容 Camon 30 / 30 Pro）\n- 价格：₱25.0\n- 特点：9H 硬度、全屏覆盖，防指纹、防刮、防水防油，0.3mm 超薄，高清高灵敏触控\n\n这是当前候选中最匹配\"Tecno Camon 30\"的一款。需要我改成其他型号（如仅 Camon 30S/30 Pro 专用）或直接结算吗？",
+      "elapsed_ms": 29325.09
+    },
+    {
+      "case_id": "B17",
+      "status": "ok",
+      "query": "找一件男士圆领 T 恤，并立即购买一件",
+      "task": "buy_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 0,
+      "order_count": 1,
+      "calls": [
+        "product_search",
+        "product_search",
+        "get_product_details",
+        "buy_now"
+      ],
+      "answer": "已为你完成购买 ✅\n\n- 商品：Terranova Crew Neck Short Sleeve T-Shirt for Men（TerraNova）\n- 规格：男士圆领、短袖、纯色、100% 棉、标准版型\n- 价格：499\n- 订单号：SIM-5983D0BCD1（状态：已确认，模拟订单，不产生真实付款或发货）\n\n这件最贴合你的需求：男士圆领纯棉 T 恤，基础百搭。需要我帮你换其他颜色/尺码，或再挑备选款吗？",
+      "elapsed_ms": 20595.97
+    },
+    {
+      "case_id": "B18",
+      "status": "ok",
+      "query": "找一款手机保护壳，直接购买一件",
+      "task": "buy_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 1,
+      "calls": [
+        "product_search",
+        "buy_now"
+      ],
+      "answer": "已下单。\n\n- 商品：Ultra-thin Matte TPU Shockproof Phone Case（深绿色，超薄磨砂 TPU 防摔款）\n- 价格：49.0\n- 订单号：SIM-48B3C65CE3（状态：已确认，模拟订单，无真实付款/发货）\n\n这款是候选中最通用的一款，兼容 iPhone 16/15/14 Pro Max Plus、13/12/11 Pro Max、XR/XS Max 等多机型，具备防摔、防刮、防尘防指纹的轻薄保护。如果你用的是特定机型或想要别的颜色/材质，告诉我可以再换一款。",
+      "elapsed_ms": 24526.06
+    },
+    {
+      "case_id": "B19",
+      "status": "ok",
+      "query": "帮我找一款女士衬衫，立即购买一件",
+      "task": "buy_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 6,
+      "cart_count": 0,
+      "order_count": 1,
+      "calls": [
+        "product_search",
+        "get_product_details",
+        "buy_now"
+      ],
+      "answer": "已为您下单。\n\n- 商品：女士衬衫/上衣（Womens Blouse Shirt，S–M 常规版）\n- 价格：$20.00，销量 11（候选中最高）\n- 特点：衬衫领、短袖、雪纺/丝棉面料、休闲款，有粉/桃/蓝/绿多色\n- 订单号：SIM-68B9D534FD，状态已确认（模拟订单，不产生真实付款或发货）\n\n您没有指定颜色、尺码和预算，我按销量和价格综合选了这一款。如需要指定颜色或尺码，或想换成其他衬衫（如白色正装款），告诉我即可调整。",
+      "elapsed_ms": 17815.68
+    },
+    {
+      "case_id": "B20",
+      "status": "ok",
+      "query": "帮我找一件手工编织材料，直接购买一件",
+      "task": "buy_write",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 1,
+      "calls": [
+        "product_search",
+        "get_product_details",
+        "get_product_details",
+        "buy_now"
+      ],
+      "answer": "已按你的要求直接下单一件。\n\n**最可能满足需求的商品**：Tiny Cord 尼龙手工编织毛线（2.5–3mm × 200M，1 股，100% 尼龙，重约 190–200g，33 色可选）——正好是纯编织材料，适配 4–6mm 钩针，是同类中销量最高的一款（85 件）。\n\n**订单**：SIM-237D06720B，数量 1，单价 ¥90.0，状态已确认（模拟订单，无真实付款/发货）。\n\n需要我把它加进收藏，或再配一件配色毛线以防色差吗？",
+      "elapsed_ms": 26309.52
+    }
+  ]
+}

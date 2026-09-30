@@ -1,0 +1,147 @@
+{
+  "cases": 3,
+  "completed": 3,
+  "metrics": {
+    "task_success": 1.0,
+    "unwanted_buy_count": 0,
+    "delegation_rate": 1.0,
+    "parallel_batches": 3,
+    "mean_parallel_speedup": 1.804,
+    "tool_steps_mean": 2.0,
+    "tool_steps_p95": 2.0,
+    "grounded_write_rate": null,
+    "p50_ms": 59775.87,
+    "p95_ms": 75306.45
+  },
+  "rows": [
+    {
+      "case_id": "BP01",
+      "status": "ok",
+      "query": "请把找无线鼠标和找机械键盘作为两个互不依赖的只读子任务并行处理，各给我一个商品，不要加购或购买。",
+      "task": "search_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 6,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_4lUOHHITqyrIFUpXTyLp4004",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "只读搜索：找一款无线鼠标（wireless mouse），只需返回最匹配的 1 件商品，包含商品ID、名称、价格和关键属性。不要加购、收藏、下单或任何写操作。"
+          },
+          "elapsed_ms": 38657.18,
+          "batch_step": 0,
+          "parallel_batch_ms": 38667.86
+        },
+        {
+          "id": "call_01_k5AOWQchYMALSLnPgUti4227",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "只读搜索：找一款机械键盘（mechanical keyboard），只需返回最匹配的 1 件商品，包含商品ID、名称、价格和关键属性。不要加购、收藏、下单或任何写操作。"
+          },
+          "elapsed_ms": 36832.4,
+          "batch_step": 0,
+          "parallel_batch_ms": 38667.86
+        }
+      ],
+      "parallel_speedups": [
+        1.952
+      ],
+      "written_grounded": true,
+      "answer": "两个只读子任务已并行完成，未加购、未下单。\n\n**1. 无线鼠标**\n- ID：4452386400\n- 名称：Wireless Bluetooth Mouse Portable Magic Silent Ergonomic Mice（EMTRA）\n- 价格：114.09\n- 特点：蓝牙无线连接，静音、人体工学，适用于笔记本/iPad/平板/手机/办公，销量 5（候选中最热门）\n\n**2. 机械键盘**\n- ID：4994270941\n- 名称：Mechanical Keyboard RGB 104 Keys Gaming Keyboard，金属面板，带手机支架槽\n- 价格：335.0\n- 特点：104 键、RGB、光学轴、金属+塑料材质、黑/白配色、1.5m 线（有线），销量 2\n\n两者都只是检索结果，购物车和订单均未改动。需要我把其中某件加入购物车或下单吗？",
+      "elapsed_ms": 43373.58
+    },
+    {
+      "case_id": "BP02",
+      "status": "ok",
+      "query": "请把查询 Tecno Camon 30 钢化膜和查询 Acer Aspire 电池作为两个互不依赖的 SearchAgent 任务同时派发，只展示结果，不下单。",
+      "task": "search_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_wEUKqRUwvogZJCpTu2Bl8700",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search for tempered glass screen protectors compatible with Tecno Camon 30. Return matching products with name, price, brand, and compatibility. Read-only, do not purchase."
+          },
+          "elapsed_ms": 47411.95,
+          "batch_step": 0,
+          "parallel_batch_ms": 71102.11
+        },
+        {
+          "id": "call_01_bSBAqXxcYDvif7TiVk2s8542",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search for replacement batteries compatible with Acer Aspire laptops. Return matching products with name, price, brand, and compatibility. Read-only, do not purchase."
+          },
+          "elapsed_ms": 71091.69,
+          "batch_step": 0,
+          "parallel_batch_ms": 71102.11
+        }
+      ],
+      "parallel_speedups": [
+        1.667
+      ],
+      "written_grounded": true,
+      "answer": "两个 SearchAgent 查询已并行完成，仅展示结果，未下单。\n\n**① Tecno Camon 30 钢化膜（8 款，₱25–₱87）**\n| 商品 | 价格 | 兼容 |\n|---|---|---|\n| 3in1 Camon 30S 钢化膜 + 镜头膜 | 38.9 | Camon 30S/30S Pro/30 Pro |\n| 钢化膜（多机型通用） | 25.0 | Camon 30 / 30 Pro |\n| 磨砂防指纹钢化膜 CL6/CL6k | 83.0 | Camon 30 (CL6/CL6k) |\n| 亚克力壳 + 钢化膜套装 | 39.09 | Camon 30 4G/5G、30 Pro |\n| 全屏钢化膜 4G/5G 2024 | 79.0 | Camon 30 Pro / 30 4G/5G |\n| 8合1 钢化膜（前+镜头） | 57.61 | Camon 30 Premier/30 Pro 5G/30 4G |\n| 3in1（屏+镜头+背膜） | 87.0 | Camon 30 / Camon 30 5G |\n| 9H 抗刮钢化膜 2024 | 82.0 | Camon 30 / 30 Pro 4G/5G |\n\n注意：兼容性因商品而异，务必按你具体机型（Camon 30 标准版 还是 Pro）挑选；最便宜为 ₱25 的通用款。\n\n**② Acer Aspire 电池（9+ 款，₱790–₱2,628）**\n| 商品 | 价格 | 兼容/型号 |\n|---|---|---|\n| LPO AS09A41（11.1V 5200mAh） | 1728 | Aspire 5732/7315/7715/4332/4732/5232 |\n| AP19B8K（11.25V 41.76Wh） | 1398 | Aspire A315-56、A317-52、SF314-42 |\n| AP19B8K（同上） | 1399 | 同上 |\n| AL14A32（6芯） | 790 | Aspire E5 系列、V3-472 |\n| AP19B5L | 1498 | Aspire A514-54、A515-55、A515-43 |\n| AP16M5J（7.7V 4810mAh） | 2428 | Aspire 3 A314/A315、Aspire 1 A115 |\n| AP16M5J | 2628 | Aspire 3 A315-51 |\n| AL14A32 | 850 | Aspire E15/E14（含 Touch） |\n\n注意：电池按具体型号/部件号区分（如 AP19B8K vs AL14A32 vs AP16M5J），请先核对你的 Aspire 型号与电池部件号再选择；最便宜为 ₱790 的 AL14A32。\n\n需要我按",
+      "elapsed_ms": 77032.07
+    },
+    {
+      "case_id": "BP03",
+      "status": "ok",
+      "query": "请并行委派两个独立的商品搜索：男士圆领 T 恤，以及摩托车座套；每类都给我商品，不要写入购物状态。",
+      "task": "search_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_CIYehFokmSKq6TQA7sby5790",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "只读商品搜索，不写入任何购物状态。搜索：men's crew neck T-shirt（男士圆领 T 恤）。返回候选商品及关键属性（品牌、颜色、尺寸、价格、材质），给出最匹配的一件及理由。"
+          },
+          "elapsed_ms": 54751.64,
+          "batch_step": 0,
+          "parallel_batch_ms": 54758.49
+        },
+        {
+          "id": "call_01_qTzJIKsZOXulvcPVbe3A4828",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "只读商品搜索，不写入任何购物状态。搜索：motorcycle seat cover（摩托车座套）。返回候选商品及关键属性（品牌、颜色、尺寸/适配、价格、材质），给出最匹配的一件及理由。"
+          },
+          "elapsed_ms": 43421.86,
+          "batch_step": 0,
+          "parallel_batch_ms": 54758.49
+        }
+      ],
+      "parallel_speedups": [
+        1.793
+      ],
+      "written_grounded": true,
+      "answer": "两个只读搜索均已完成，未写入任何购物状态。\n\n**1. 男士圆领 T 恤（men's crew neck T-shirt）**\n- 最匹配：**Penshoppe 常规版型圆领 T 恤**（ID 4766836696，¥329，棉质，Navy Blue/Evening Sand，XS–L，销量 11）——圆领、纯棉、有明确品牌与多尺码，综合最贴合。\n- 备选：Superdry 圆领纯棉黑 T（1901.9，S–XXXL）；Mens Plain Novelty 圆领棉 T（99.99，M–XXL）；TerraNova 圆领短袖（499 / 395）。\n\n**2. 摩托车座套（motorcycle seat cover）**\n- 最匹配：**PU 皮革通用座套**（ID 4942818196，¥119，防水防刮易清洁，universal，销量 51）——通用适配+皮革防水，验证度最高。\n- 备选：Motus 皮革座套（4078315683，65.82，黑+红，M–XXL；另有 4544921176，69）；网眼防水座套（4583963971，59，适配 Click 125i）；Yamaha/Honda 加厚防滑皮革（5020317976，49）。\n\n需要我把其中某一件加入购物车或下单吗？也可以告诉我具体品牌、颜色、尺码或预算，我再细筛。",
+      "elapsed_ms": 59775.87
+    }
+  ]
+}

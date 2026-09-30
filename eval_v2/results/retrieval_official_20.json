@@ -1,0 +1,1731 @@
+{
+  "status": "complete",
+  "source": "eval_v2\\datasets\\official_product_sample_20.jsonl",
+  "cases": 20,
+  "matched_ids": 20,
+  "metrics": {
+    "B1_vector": {
+      "recall@5": {
+        "mean": 0.2,
+        "ci95": [
+          0.05,
+          0.4
+        ]
+      },
+      "precision@5": {
+        "mean": 0.04,
+        "ci95": [
+          0.01,
+          0.08
+        ]
+      },
+      "mrr@5": {
+        "mean": 0.135,
+        "ci95": [
+          0.02,
+          0.285
+        ]
+      },
+      "ndcg@5": {
+        "mean": 0.1509,
+        "ci95": [
+          0.0315,
+          0.308
+        ]
+      },
+      "recall@8": {
+        "mean": 0.2,
+        "ci95": [
+          0.05,
+          0.4
+        ]
+      },
+      "precision@8": {
+        "mean": 0.025,
+        "ci95": [
+          0.0063,
+          0.05
+        ]
+      },
+      "mrr@8": {
+        "mean": 0.135,
+        "ci95": [
+          0.02,
+          0.285
+        ]
+      },
+      "ndcg@8": {
+        "mean": 0.1509,
+        "ci95": [
+          0.0315,
+          0.308
+        ]
+      },
+      "p50_ms": 270.935,
+      "p95_ms": 507.369
+    },
+    "B2_rrf": {
+      "recall@5": {
+        "mean": 0.35,
+        "ci95": [
+          0.15,
+          0.55
+        ]
+      },
+      "precision@5": {
+        "mean": 0.07,
+        "ci95": [
+          0.03,
+          0.11
+        ]
+      },
+      "mrr@5": {
+        "mean": 0.2167,
+        "ci95": [
+          0.075,
+          0.3875
+        ]
+      },
+      "ndcg@5": {
+        "mean": 0.2496,
+        "ci95": [
+          0.0996,
+          0.4246
+        ]
+      },
+      "recall@8": {
+        "mean": 0.35,
+        "ci95": [
+          0.15,
+          0.55
+        ]
+      },
+      "precision@8": {
+        "mean": 0.0437,
+        "ci95": [
+          0.0187,
+          0.0688
+        ]
+      },
+      "mrr@8": {
+        "mean": 0.2167,
+        "ci95": [
+          0.075,
+          0.3875
+        ]
+      },
+      "ndcg@8": {
+        "mean": 0.2496,
+        "ci95": [
+          0.0996,
+          0.4246
+        ]
+      },
+      "p50_ms": 5533.87,
+      "p95_ms": 8879.429
+    },
+    "B3_rerank": {
+      "recall@5": {
+        "mean": 0.3,
+        "ci95": [
+          0.1,
+          0.5
+        ]
+      },
+      "precision@5": {
+        "mean": 0.06,
+        "ci95": [
+          0.02,
+          0.1
+        ]
+      },
+      "mrr@5": {
+        "mean": 0.225,
+        "ci95": [
+          0.075,
+          0.4
+        ]
+      },
+      "ndcg@5": {
+        "mean": 0.2446,
+        "ci95": [
+          0.0815,
+          0.4262
+        ]
+      },
+      "recall@8": {
+        "mean": 0.3,
+        "ci95": [
+          0.1,
+          0.5
+        ]
+      },
+      "precision@8": {
+        "mean": 0.0375,
+        "ci95": [
+          0.0125,
+          0.0625
+        ]
+      },
+      "mrr@8": {
+        "mean": 0.225,
+        "ci95": [
+          0.075,
+          0.4
+        ]
+      },
+      "ndcg@8": {
+        "mean": 0.2446,
+        "ci95": [
+          0.0815,
+          0.4262
+        ]
+      },
+      "p50_ms": 24590.445,
+      "p95_ms": 34641.645
+    }
+  },
+  "mean_branch_overlap": 0.0576,
+  "rows": [
+    {
+      "case_id": "O001",
+      "query": "I'm looking for B20 cast bronze crash cymbals. Can you show me some hybrid ghost options?",
+      "product_id": "591486855",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "591486855",
+          "684368150",
+          "4670975425",
+          "4670918807",
+          "4584822038",
+          "3359678802",
+          "591516233",
+          "216715982"
+        ],
+        "B2_rrf": [
+          "684368150",
+          "4670975425",
+          "591486855",
+          "4670918807",
+          "591516233",
+          "3767397079",
+          "594854155",
+          "1587788543"
+        ],
+        "B3_rerank": [
+          "684368150",
+          "591486855",
+          "4670975425",
+          "4670918807",
+          "585646114",
+          "585602823",
+          "591516233",
+          "3767397079"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 2969.55,
+        "B2_rrf": 3453.66,
+        "B3_rerank": 22511.35,
+        "rerank_only": 19057.69
+      },
+      "branch_overlap": 0.2371,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        },
+        "B2_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.3333333333333333,
+          "ndcg@5": 0.5,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.3333333333333333,
+          "ndcg@8": 0.5
+        },
+        "B3_rerank": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.5,
+          "ndcg@5": 0.6309297535714575,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.5,
+          "ndcg@8": 0.6309297535714575
+        }
+      }
+    },
+    {
+      "case_id": "O002",
+      "query": "Looking for a grey unisex racing t-shirt in extra small, priced from 324 to 623 pesos.",
+      "product_id": "3350592664",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "2806660510",
+          "2204357184",
+          "4773656682",
+          "3746739639",
+          "4079774181",
+          "3463875013",
+          "3274087949",
+          "5012553021"
+        ],
+        "B2_rrf": [
+          "2560292283",
+          "4680833902",
+          "3142252395",
+          "4122838534",
+          "3339147311",
+          "5044827916",
+          "2541206570",
+          "3224853637"
+        ],
+        "B3_rerank": [
+          "4122838534",
+          "2772375996",
+          "3603512816",
+          "3875726523",
+          "3875721617",
+          "3142252395",
+          "5040044183",
+          "3224853637"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 295.69,
+        "B2_rrf": 5186.84,
+        "B3_rerank": 27090.65,
+        "rerank_only": 21903.81
+      },
+      "branch_overlap": 0.0,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O003",
+      "query": "Looking for oval sunglasses with a champagne frame and black color, made of plastic, from OEM brand, suitable for both men and women. Please show only items with free delivery and LazFlash deals.",
+      "product_id": "3208112659",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "5050594246",
+          "2408154172",
+          "3262153564",
+          "3626562806",
+          "3818283988",
+          "5091175824",
+          "3292241453",
+          "3526908930"
+        ],
+        "B2_rrf": [
+          "4235638887",
+          "255651513",
+          "3672529424",
+          "3896870600",
+          "3905065040",
+          "4597702022",
+          "3866662933",
+          "3865370692"
+        ],
+        "B3_rerank": [
+          "255651513",
+          "4608077382",
+          "3896870600",
+          "3905065040",
+          "3672529424",
+          "4235638887",
+          "4597702022",
+          "4382510989"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 377.78,
+        "B2_rrf": 15096.96,
+        "B3_rerank": 38406.4,
+        "rerank_only": 23309.43
+      },
+      "branch_overlap": 0.0435,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O004",
+      "query": "Looking for a 5 inch stainless steel hasp for door security, with free delivery and price between 7 to 38 PHP.",
+      "product_id": "4430454763",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4629209570",
+          "3532119434",
+          "4765482370",
+          "4528939413",
+          "4828961015",
+          "4774933913",
+          "3564658335",
+          "3546191985"
+        ],
+        "B2_rrf": [
+          "4528939413",
+          "5066834710",
+          "2960436017",
+          "4240315417",
+          "4794416035",
+          "4529067073",
+          "4765482370",
+          "2972404384"
+        ],
+        "B3_rerank": [
+          "4430454763",
+          "4528939413",
+          "4528842937",
+          "4529093001",
+          "4765482370",
+          "5066834710",
+          "4621692891",
+          "4529067073"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 295.36,
+        "B2_rrf": 8552.19,
+        "B3_rerank": 28742.19,
+        "rerank_only": 20190.01
+      },
+      "branch_overlap": 0.1538,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        }
+      }
+    },
+    {
+      "case_id": "O005",
+      "query": "Looking for a plastic water bottle with a 64 oz capacity from oem brand",
+      "product_id": "4977629054",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4044605680",
+          "4453696609",
+          "4285372245",
+          "3513305655",
+          "4463103474",
+          "3693705774",
+          "5106752564",
+          "3995906376"
+        ],
+        "B2_rrf": [
+          "4566643910",
+          "4401659305",
+          "2486931710",
+          "2548630768",
+          "4941858831",
+          "2269532722",
+          "3490427081",
+          "4242630511"
+        ],
+        "B3_rerank": [
+          "3490427081",
+          "3672018194",
+          "4346994345",
+          "4037417460",
+          "5088452386",
+          "5089026292",
+          "3926845306",
+          "4028440976"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 257.65,
+        "B2_rrf": 6082.59,
+        "B3_rerank": 34443.5,
+        "rerank_only": 28360.91
+      },
+      "branch_overlap": 0.0345,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O006",
+      "query": "Show me white photo printers priced above 739 PHP.",
+      "product_id": "4842030826",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "3159139451",
+          "281288822",
+          "2198250605",
+          "2314459883",
+          "5022739565",
+          "5054040161",
+          "2523359299",
+          "413186459"
+        ],
+        "B2_rrf": [
+          "5022739565",
+          "5054040161",
+          "5019269927",
+          "4919383531",
+          "4844010245",
+          "4627394189",
+          "4829852671",
+          "2000671809"
+        ],
+        "B3_rerank": [
+          "5054040161",
+          "2453495838",
+          "4829852671",
+          "5022739565",
+          "4919383531",
+          "2000671809",
+          "2066040714",
+          "4404676769"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 244.14,
+        "B2_rrf": 1035.09,
+        "B3_rerank": 19959.18,
+        "rerank_only": 18924.09
+      },
+      "branch_overlap": 0.0256,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O007",
+      "query": "Find specialty electrical tape with a price above 26 PHP in the tape category.",
+      "product_id": "2294922997",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "2759359034",
+          "4849465331",
+          "3679489727",
+          "3040318677",
+          "4111649785",
+          "3421867169",
+          "4119104161",
+          "1349992056"
+        ],
+        "B2_rrf": [
+          "2763762260",
+          "4948587950",
+          "3076219856",
+          "4810749086",
+          "4401930915",
+          "3645784985",
+          "4347382329",
+          "3616906721"
+        ],
+        "B3_rerank": [
+          "4810749086",
+          "2763762260",
+          "4948587950",
+          "4401930915",
+          "2834161044",
+          "3645784985",
+          "3616906721",
+          "2739581160"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 218.07,
+        "B2_rrf": 4408.76,
+        "B3_rerank": 22331.13,
+        "rerank_only": 17922.36
+      },
+      "branch_overlap": 0.0084,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O008",
+      "query": "Looking for a blue button flex replacement for Oppo A5S",
+      "product_id": "3891025403",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4409737196",
+          "5013930588",
+          "4753198560",
+          "3510739854",
+          "3092532581",
+          "4396296139",
+          "4864930063",
+          "4412382596"
+        ],
+        "B2_rrf": [
+          "5013930588",
+          "3510739854",
+          "5034211721",
+          "4246026580",
+          "4567412214",
+          "3092532581",
+          "5080511256",
+          "4867026306"
+        ],
+        "B3_rerank": [
+          "3510739854",
+          "4567412214",
+          "5013930588",
+          "4658150780",
+          "5015039983",
+          "5080668943",
+          "4568927631",
+          "4874321273"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 226.08,
+        "B2_rrf": 3928.57,
+        "B3_rerank": 20264.19,
+        "rerank_only": 16335.62
+      },
+      "branch_overlap": 0.1881,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O009",
+      "query": "Show me cupcake toppers related to sleeping beauty that are available for cash on delivery and cost more than 21 pesos.",
+      "product_id": "3769908127",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "3769908127",
+          "3769844572",
+          "3769827507",
+          "3772469410",
+          "5074699911",
+          "3971783109",
+          "3372807825",
+          "1618898353"
+        ],
+        "B2_rrf": [
+          "3769908127",
+          "5004786532",
+          "4719104671",
+          "4472997262",
+          "2833867269",
+          "4012678368",
+          "2589698101",
+          "4958449799"
+        ],
+        "B3_rerank": [
+          "3769908127",
+          "4594527073",
+          "4472997262",
+          "4958449799",
+          "3827636630",
+          "2833867269",
+          "4551369377",
+          "3826983085"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 244.26,
+        "B2_rrf": 6004.23,
+        "B3_rerank": 28265.45,
+        "rerank_only": 22261.22
+      },
+      "branch_overlap": 0.0909,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        },
+        "B2_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        },
+        "B3_rerank": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        }
+      }
+    },
+    {
+      "case_id": "O010",
+      "query": "Show me curtains made from canadian fabric, suitable for any gender, with a liner included and standard solution. I want options with free delivery, priced between 120 and 176 PHP.",
+      "product_id": "4848908277",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4910494472",
+          "4805122135",
+          "4959478830",
+          "4147957004",
+          "4538525147",
+          "4959710190",
+          "5025583263",
+          "4692315470"
+        ],
+        "B2_rrf": [
+          "4848908277",
+          "4804078376",
+          "4983259301",
+          "4127520715",
+          "4369423853",
+          "2469215596",
+          "4706537462",
+          "4419370282"
+        ],
+        "B3_rerank": [
+          "4127520715",
+          "4586249253",
+          "4586149625",
+          "5039201793",
+          "4966333623",
+          "4804078376",
+          "4997208504",
+          "4419370282"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 304.54,
+        "B2_rrf": 8408.05,
+        "B3_rerank": 26943.83,
+        "rerank_only": 18535.77
+      },
+      "branch_overlap": 0.0,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O011",
+      "query": "I'm looking for a modern style strainer that costs between 94 and 521 pesos.",
+      "product_id": "5110397734",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "5059949663",
+          "3112262492",
+          "2861058673",
+          "3958981511",
+          "4712179013",
+          "4039426572",
+          "2763512831",
+          "4489083577"
+        ],
+        "B2_rrf": [
+          "3701430590",
+          "1740418130",
+          "2838907945",
+          "3564143037",
+          "4337234534",
+          "4130421522",
+          "4934808776",
+          "4696093950"
+        ],
+        "B3_rerank": [
+          "3564143037",
+          "4967436823",
+          "5074175019",
+          "2838907945",
+          "1740418130",
+          "3701430590",
+          "4146415783",
+          "4983185890"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 241.37,
+        "B2_rrf": 4671.46,
+        "B3_rerank": 22996.82,
+        "rerank_only": 18325.36
+      },
+      "branch_overlap": 0.0256,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O012",
+      "query": "Looking for a black stationary garment rack that supports cash on delivery.",
+      "product_id": "3198309713",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4884870488",
+          "4350019976",
+          "4351925131",
+          "3225803870",
+          "1218064454",
+          "4923098530",
+          "3835615133",
+          "4821886254"
+        ],
+        "B2_rrf": [
+          "4351925131",
+          "4350019976",
+          "1218064454",
+          "3198309713",
+          "4405937492",
+          "3198446586",
+          "4401352373",
+          "4407566979"
+        ],
+        "B3_rerank": [
+          "4435904907",
+          "3198446586",
+          "4405931545",
+          "4405937492",
+          "3531238547",
+          "4351925131",
+          "4350019976",
+          "2308438452"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 206.34,
+        "B2_rrf": 3767.33,
+        "B3_rerank": 24995.33,
+        "rerank_only": 21228.0
+      },
+      "branch_overlap": 0.0256,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.25,
+          "ndcg@5": 0.43067655807339306,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.25,
+          "ndcg@8": 0.43067655807339306
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O013",
+      "query": "Looking for a glass water bottle with a 500ml capacity, priced from 19 to 132 PHP.",
+      "product_id": "4430045623",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "2718363939",
+          "2995718345",
+          "443552896",
+          "5105181957",
+          "3775141657",
+          "3061010382",
+          "2995991912",
+          "3775157493"
+        ],
+        "B2_rrf": [
+          "4605391894",
+          "5012738821",
+          "1835030612",
+          "1731470585",
+          "4386201561",
+          "4378131417",
+          "4163249800",
+          "4932941124"
+        ],
+        "B3_rerank": [
+          "4605391894",
+          "4163249800",
+          "5003260420",
+          "5128170603",
+          "4386201561",
+          "1835030612",
+          "4378131417",
+          "4121516477"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 235.16,
+        "B2_rrf": 5614.52,
+        "B3_rerank": 23301.35,
+        "rerank_only": 17686.83
+      },
+      "branch_overlap": 0.0256,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O014",
+      "query": "Looking for a pink wall fan with 5 blades, made of plastic, uses around 23 watts, supports cash on delivery, and costs between 80 to 300 pesos.",
+      "product_id": "4272344871",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4938199540",
+          "3144187610",
+          "5126421764",
+          "4644828249",
+          "3844503017",
+          "5081698588",
+          "3296409432",
+          "3881354295"
+        ],
+        "B2_rrf": [
+          "3581967986",
+          "4712780882",
+          "4100188470",
+          "4272344871",
+          "4965574542",
+          "4100217299",
+          "4369389850",
+          "4223892613"
+        ],
+        "B3_rerank": [
+          "4272344871",
+          "3581967986",
+          "5106035129",
+          "1257522997",
+          "4712780882",
+          "4453219294",
+          "2892626912",
+          "3859192102"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 300.76,
+        "B2_rrf": 7753.78,
+        "B3_rerank": 26474.27,
+        "rerank_only": 18720.49
+      },
+      "branch_overlap": 0.0169,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.25,
+          "ndcg@5": 0.43067655807339306,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.25,
+          "ndcg@8": 0.43067655807339306
+        },
+        "B3_rerank": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        }
+      }
+    },
+    {
+      "case_id": "O015",
+      "query": "Looking for a black LED logo for the rear trunk lid, suitable for a 2011 Toyota Fortuner.",
+      "product_id": "2382237163",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "2382825231",
+          "2382237163",
+          "3207106638",
+          "3332321343",
+          "3215460530",
+          "1824089069",
+          "3212714132",
+          "2379121187"
+        ],
+        "B2_rrf": [
+          "2382825231",
+          "2382237163",
+          "3215460530",
+          "3332321343",
+          "3207106638",
+          "3216093033",
+          "3212714132",
+          "3209926084"
+        ],
+        "B3_rerank": [
+          "2382825231",
+          "2382237163",
+          "2379121187",
+          "3207106638",
+          "3216093033",
+          "3209926084",
+          "974666526",
+          "3212714132"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 248.01,
+        "B2_rrf": 6740.83,
+        "B3_rerank": 18802.6,
+        "rerank_only": 12061.78
+      },
+      "branch_overlap": 0.2,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.5,
+          "ndcg@5": 0.6309297535714575,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.5,
+          "ndcg@8": 0.6309297535714575
+        },
+        "B2_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.5,
+          "ndcg@5": 0.6309297535714575,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.5,
+          "ndcg@8": 0.6309297535714575
+        },
+        "B3_rerank": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.5,
+          "ndcg@5": 0.6309297535714575,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.5,
+          "ndcg@8": 0.6309297535714575
+        }
+      }
+    },
+    {
+      "case_id": "O016",
+      "query": "Looking for an xl size muscle shirt set in flame orange and navy blue from Moose Gear, priced above 469 pesos.",
+      "product_id": "5074303668",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4464985110",
+          "5001762929",
+          "3627604371",
+          "4079774181",
+          "5074303668",
+          "2701671760",
+          "4353907219",
+          "2988756393"
+        ],
+        "B2_rrf": [
+          "5074303668",
+          "5074552235",
+          "4785942369",
+          "4922295727",
+          "4932056144",
+          "4721221861",
+          "5037263054",
+          "4998094670"
+        ],
+        "B3_rerank": [
+          "5074552235",
+          "5074303668",
+          "4922295727",
+          "5116614979",
+          "5074598366",
+          "5037263054",
+          "4932056144",
+          "4621914405"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 285.21,
+        "B2_rrf": 5453.22,
+        "B3_rerank": 25180.08,
+        "rerank_only": 19726.86
+      },
+      "branch_overlap": 0.0345,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.2,
+          "ndcg@5": 0.38685280723454163,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.2,
+          "ndcg@8": 0.38685280723454163
+        },
+        "B2_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 1.0,
+          "ndcg@5": 1.0,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 1.0,
+          "ndcg@8": 1.0
+        },
+        "B3_rerank": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "mrr@5": 0.5,
+          "ndcg@5": 0.6309297535714575,
+          "recall@8": 1.0,
+          "precision@8": 0.125,
+          "mrr@8": 0.5,
+          "ndcg@8": 0.6309297535714575
+        }
+      }
+    },
+    {
+      "case_id": "O017",
+      "query": "Show me chrome gold stickers for Yamaha motorcycles, specifically for Kawasaki Fury 125, that cost more than 9 pesos.",
+      "product_id": "2743782985",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "1753834169",
+          "4987539078",
+          "2375281714",
+          "3316138707",
+          "4774438131",
+          "3653042665",
+          "4553353877",
+          "5080080410"
+        ],
+        "B2_rrf": [
+          "2375281714",
+          "3471090289",
+          "2505306861",
+          "2022336088",
+          "4391421769",
+          "3602856581",
+          "4434820042",
+          "4772575843"
+        ],
+        "B3_rerank": [
+          "4391421769",
+          "2375281714",
+          "1610094199",
+          "2868436329",
+          "3471090289",
+          "3292930074",
+          "3211827672",
+          "2449823400"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 288.41,
+        "B2_rrf": 4124.35,
+        "B3_rerank": 19529.33,
+        "rerank_only": 15404.98
+      },
+      "branch_overlap": 0.0084,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O018",
+      "query": "Find women's t-shirts in XL with a round neck, short sleeves, made of 95% polyester and 5% spandex, and priced above 49 PHP.",
+      "product_id": "4449559142",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4766814199",
+          "4767021200",
+          "4766847121",
+          "4658579166",
+          "5123767678",
+          "5068098326",
+          "5068116255",
+          "4525588994"
+        ],
+        "B2_rrf": [
+          "4680468345",
+          "4680243765",
+          "5013844148",
+          "5110405881",
+          "4424430022",
+          "4346169775",
+          "4488949275",
+          "4411951753"
+        ],
+        "B3_rerank": [
+          "4679521707",
+          "4458445617",
+          "4409167782",
+          "4040011564",
+          "4680243765",
+          "4680864328",
+          "4040053413",
+          "5013844148"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 290.28,
+        "B2_rrf": 7939.07,
+        "B3_rerank": 24185.56,
+        "rerank_only": 16246.49
+      },
+      "branch_overlap": 0.0084,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O019",
+      "query": "Looking for brown plain loafers in EU size 41, priced above 867 PHP.",
+      "product_id": "3688939168",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "4683652362",
+          "4528589913",
+          "3522778694",
+          "3069533186",
+          "2167283503",
+          "4999611996",
+          "4982093779",
+          "4451583487"
+        ],
+        "B2_rrf": [
+          "4693764253",
+          "4726598076",
+          "4407040374",
+          "4263170552",
+          "3578740624",
+          "4117312819",
+          "3659366900",
+          "3555712971"
+        ],
+        "B3_rerank": [
+          "4263170552",
+          "3206200781",
+          "4259437782",
+          "4259539516",
+          "4117312819",
+          "4930203994",
+          "3578740624",
+          "4407040374"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 217.16,
+        "B2_rrf": 3359.55,
+        "B3_rerank": 16664.25,
+        "rerank_only": 13304.7
+      },
+      "branch_overlap": 0.0169,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "O020",
+      "query": "Show me lego brand building sets for unisex kids aged 8+ who love animals and nature, with LazMall authenticity and fast returns.",
+      "product_id": "4593754259",
+      "group": "official",
+      "ranked_ids": {
+        "B1_vector": [
+          "5104037960",
+          "4461354682",
+          "4425260428",
+          "3519274477",
+          "1874333414",
+          "4567340399",
+          "4114578275",
+          "4716094158"
+        ],
+        "B2_rrf": [
+          "1779444843",
+          "4314023897",
+          "5104243264",
+          "4283487201",
+          "4299398913",
+          "4921017944",
+          "3576281040",
+          "4608358778"
+        ],
+        "B3_rerank": [
+          "4288787961",
+          "3576281040",
+          "4299398913",
+          "4846695407",
+          "4815202567",
+          "4314023897",
+          "4283488300",
+          "4345584288"
+        ]
+      },
+      "latency_ms": {
+        "B1_vector": 284.22,
+        "B2_rrf": 6458.93,
+        "B3_rerank": 28967.72,
+        "rerank_only": 22508.79
+      },
+      "branch_overlap": 0.0084,
+      "metrics": {
+        "B1_vector": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B2_rrf": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        },
+        "B3_rerank": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "mrr@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@8": 0.0,
+          "precision@8": 0.0,
+          "mrr@8": 0.0,
+          "ndcg@8": 0.0
+        }
+      }
+    }
+  ]
+}

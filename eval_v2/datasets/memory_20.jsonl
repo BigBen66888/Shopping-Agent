@@ -1,0 +1,20 @@
+{"case_id": "D01", "user_message": "我要买一个黑色背包", "expected_kind": null, "expected_term": null}
+{"case_id": "D02", "user_message": "今天帮我找一款便宜的鼠标", "expected_kind": null, "expected_term": null}
+{"case_id": "D03", "user_message": "这次旅行想买红色行李箱", "expected_kind": null, "expected_term": null}
+{"case_id": "D04", "user_message": "把这款耳机加进购物车", "expected_kind": null, "expected_term": null}
+{"case_id": "D05", "user_message": "看看昨天那个订单", "expected_kind": null, "expected_term": null}
+{"case_id": "D06", "user_message": "推荐一台 2000 元以内的显示器", "expected_kind": null, "expected_term": null}
+{"case_id": "D07", "user_message": "帮朋友找 42 码的鞋", "expected_kind": null, "expected_term": null}
+{"case_id": "D08", "user_message": "我现在要一个 65W 充电器", "expected_kind": null, "expected_term": null}
+{"case_id": "D09", "user_message": "搜索适用于 Acer Aspire 的电池", "expected_kind": null, "expected_term": null}
+{"case_id": "D10", "user_message": "今天给孩子买绿色裙子", "expected_kind": null, "expected_term": null}
+{"case_id": "D11", "user_message": "我平时只买黑色的包", "expected_kind": "attribute", "expected_term": "黑色"}
+{"case_id": "D12", "user_message": "我一直偏好罗技的鼠标", "expected_kind": "brand", "expected_term": "罗技"}
+{"case_id": "D13", "user_message": "我通常购买 300 元以下的耳机", "expected_kind": "budget", "expected_term": "300"}
+{"case_id": "D14", "user_message": "我长期只买 42 码的鞋", "expected_kind": "attribute", "expected_term": "42"}
+{"case_id": "D15", "user_message": "以后推荐键盘时优先无线款", "expected_kind": "attribute", "expected_term": "无线"}
+{"case_id": "D16", "user_message": "我常买猫咪用品", "expected_kind": "category", "expected_term": "猫"}
+{"case_id": "D17", "user_message": "我对羊毛过敏，以后衣服不要羊毛", "expected_kind": "constraint", "expected_term": "羊毛"}
+{"case_id": "D18", "user_message": "我习惯买 500 毫升以上的水杯", "expected_kind": "constraint", "expected_term": "500"}
+{"case_id": "D19", "user_message": "我一直喜欢索尼这个品牌", "expected_kind": "brand", "expected_term": "索尼"}
+{"case_id": "D20", "user_message": "我通常只买蓝色的数码配件", "expected_kind": "attribute", "expected_term": "蓝色"}

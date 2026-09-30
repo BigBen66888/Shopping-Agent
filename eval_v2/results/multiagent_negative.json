@@ -1,0 +1,114 @@
+{
+  "cases": 3,
+  "completed": 3,
+  "metrics": {
+    "task_success": 1.0,
+    "unwanted_buy_count": 0,
+    "delegation_rate": 0.0,
+    "parallel_batches": 0,
+    "mean_parallel_speedup": null,
+    "tool_steps_mean": 1.0,
+    "tool_steps_p95": 1.0,
+    "grounded_write_rate": null,
+    "p50_ms": 6341.99,
+    "p95_ms": 9543.47
+  },
+  "rows": [
+    {
+      "case_id": "BN01",
+      "status": "ok",
+      "query": "帮我找一件价格不超过 0.01 比索的全新笔记本电脑。如果没有符合条件的商品，请直接说没有，不要买。",
+      "task": "no_result",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_w49BYWsyG1jF7RQoVymF2008",
+          "tool": "product_search",
+          "arguments": {
+            "query": "new laptop computer",
+            "budget": 0.01,
+            "category": "laptop",
+            "top_k": 8
+          },
+          "elapsed_ms": 5604.49,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [],
+      "written_grounded": true,
+      "answer": "没有符合条件的商品。\n\n搜索结果显示：在 0.01 比索（约合几厘钱）的预算内，没有任何全新笔记本电脑，因此没有可展示或下单的商品。\n\n需要的话，可以告诉我一个更现实的预算区间或其他要求（品牌、尺寸、用途等），我再帮你找。",
+      "elapsed_ms": 9899.19
+    },
+    {
+      "case_id": "BN02",
+      "status": "ok",
+      "query": "寻找 0.01 比索以内的无线蓝牙耳机，找不到就如实告诉我，不要加购物车或下单。",
+      "task": "no_result",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_VFGTf0YmyfDVKXWH1ChE2245",
+          "tool": "product_search",
+          "arguments": {
+            "query": "wireless bluetooth earbuds",
+            "budget": 0.01
+          },
+          "elapsed_ms": 2462.49,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [],
+      "written_grounded": true,
+      "answer": "搜索已完成：在 0.01 比索预算内没有任何无线蓝牙耳机结果（召回数为 0）。\n\n已如实告知，未加购物车、未下单。0.01 比索远低于正常蓝牙耳机价格，如果你愿意调整预算上限，我可以再帮你找符合条件的款式。",
+      "elapsed_ms": 6341.99
+    },
+    {
+      "case_id": "BN03",
+      "status": "ok",
+      "query": "帮我找价格不超过 0.01 比索的机械键盘，只有真实匹配商品才能展示；没有就说明没有。",
+      "task": "no_result",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 0,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_GrouDnFVpy4XJ7h7WJy34336",
+          "tool": "product_search",
+          "arguments": {
+            "query": "mechanical keyboard",
+            "budget": 0.01,
+            "top_k": 8
+          },
+          "elapsed_ms": 2239.57,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [],
+      "written_grounded": true,
+      "answer": "没有找到符合条件的结果。\n\n- 搜索条件：机械键盘，价格上限 0.01 比索\n- 结果：0 件真实匹配商品\n\n预算内没有任何机械键盘可展示，因此我不会放宽预算或推荐不符合条件的商品。如果你愿意把预算提高到实际可购买的范围（例如给出一个合理的价格上限或人民币金额），我可以立即重新搜索并给出候选。",
+      "elapsed_ms": 6070.34
+    }
+  ]
+}

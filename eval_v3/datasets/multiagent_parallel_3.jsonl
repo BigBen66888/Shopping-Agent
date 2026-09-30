@@ -1,0 +1,3 @@
+{"case_id":"BP01","query":"请把找无线鼠标和找机械键盘作为两个互不依赖的只读子任务并行处理，各给我一个商品，不要加购或购买。","task":"search_two","allow_buy":false}
+{"case_id":"BP02","query":"请把查询 Tecno Camon 30 钢化膜和查询 Acer Aspire 电池作为两个互不依赖的 SearchAgent 任务同时派发，只展示结果，不下单。","task":"search_two","allow_buy":false}
+{"case_id":"BP03","query":"请并行委派两个独立的商品搜索：男士圆领 T 恤，以及摩托车座套；每类都给我商品，不要写入购物状态。","task":"search_two","allow_buy":false}

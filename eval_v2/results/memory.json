@@ -1,0 +1,250 @@
+{
+  "cases": 20,
+  "metrics": {
+    "extraction_precision_strict": 0.7778,
+    "extraction_recall": 0.7778,
+    "one_off_false_positive_rate": 0.0,
+    "cross_session_injection_rate": 1.0
+  },
+  "cross_session": [
+    {
+      "case_id": "D11",
+      "recalled": true
+    },
+    {
+      "case_id": "D12",
+      "recalled": true
+    },
+    {
+      "case_id": "D14",
+      "recalled": true
+    },
+    {
+      "case_id": "D16",
+      "recalled": true
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "D01",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D02",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D03",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D04",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D05",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D06",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D07",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D08",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D09",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D10",
+      "status": "ok",
+      "expected_kind": null,
+      "expected_term": null,
+      "items": [],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D11",
+      "status": "ok",
+      "expected_kind": "attribute",
+      "expected_term": "黑色",
+      "items": [
+        {
+          "kind": "attribute",
+          "content": "平时只买黑色的包"
+        }
+      ],
+      "true_positive": true,
+      "false_positive": false
+    },
+    {
+      "case_id": "D12",
+      "status": "ok",
+      "expected_kind": "brand",
+      "expected_term": "罗技",
+      "items": [
+        {
+          "kind": "brand",
+          "content": "偏好罗技品牌的鼠标"
+        }
+      ],
+      "true_positive": true,
+      "false_positive": false
+    },
+    {
+      "case_id": "D13",
+      "status": "error",
+      "error": "RuntimeError: 记忆抽取输出无法解析"
+    },
+    {
+      "case_id": "D14",
+      "status": "ok",
+      "expected_kind": "attribute",
+      "expected_term": "42",
+      "items": [
+        {
+          "kind": "attribute",
+          "content": "长期只买42码的鞋"
+        }
+      ],
+      "true_positive": true,
+      "false_positive": false
+    },
+    {
+      "case_id": "D15",
+      "status": "ok",
+      "expected_kind": "attribute",
+      "expected_term": "无线",
+      "items": [
+        {
+          "kind": "constraint",
+          "content": "推荐键盘时优先无线款"
+        }
+      ],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D16",
+      "status": "ok",
+      "expected_kind": "category",
+      "expected_term": "猫",
+      "items": [
+        {
+          "kind": "category",
+          "content": "常购买猫咪用品"
+        }
+      ],
+      "true_positive": true,
+      "false_positive": false
+    },
+    {
+      "case_id": "D17",
+      "status": "ok",
+      "expected_kind": "constraint",
+      "expected_term": "羊毛",
+      "items": [
+        {
+          "kind": "constraint",
+          "content": "对羊毛过敏，衣物不要含羊毛"
+        }
+      ],
+      "true_positive": true,
+      "false_positive": false
+    },
+    {
+      "case_id": "D18",
+      "status": "ok",
+      "expected_kind": "constraint",
+      "expected_term": "500",
+      "items": [
+        {
+          "kind": "attribute",
+          "content": "习惯购买容量500毫升以上的水杯"
+        }
+      ],
+      "true_positive": false,
+      "false_positive": false
+    },
+    {
+      "case_id": "D19",
+      "status": "ok",
+      "expected_kind": "brand",
+      "expected_term": "索尼",
+      "items": [
+        {
+          "kind": "brand",
+          "content": "喜欢索尼品牌"
+        }
+      ],
+      "true_positive": true,
+      "false_positive": false
+    },
+    {
+      "case_id": "D20",
+      "status": "ok",
+      "expected_kind": "attribute",
+      "expected_term": "蓝色",
+      "items": [
+        {
+          "kind": "attribute",
+          "content": "通常只买蓝色的数码配件"
+        }
+      ],
+      "true_positive": true,
+      "false_positive": false
+    }
+  ]
+}

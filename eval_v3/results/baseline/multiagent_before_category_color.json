@@ -1,0 +1,804 @@
+{
+  "cases": 6,
+  "completed": 6,
+  "rows": [
+    {
+      "case_id": "BX01",
+      "status": "ok",
+      "query": "帮我分别找一款无线鼠标和一款机械键盘，两种商品都加入购物车，不要下单。它们是独立的搜索任务，可以同时处理。",
+      "task": "cart_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 2,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search",
+        "add_to_cart",
+        "add_to_cart"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_tlheHNZj8xZCYMXss2We2533",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Find one wireless mouse. Search English keywords: \"wireless mouse\". Return the best candidate product id, name, price, and key attributes (brand, color, connectivity, DPI, battery). Read-only, no purchase."
+          },
+          "elapsed_ms": 51166.75,
+          "batch_step": 0,
+          "parallel_batch_ms": 51178.79
+        },
+        {
+          "id": "call_01_No7NhxJF0pG6LcsoTV9C6378",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Find one mechanical keyboard. Search English keywords: \"mechanical keyboard\". Return the best candidate product id, name, price, and key attributes (brand, color, switch type, layout/size, connectivity). Read-only, no purchase."
+          },
+          "elapsed_ms": 47966.74,
+          "batch_step": 0,
+          "parallel_batch_ms": 51178.79
+        },
+        {
+          "id": "call_00_tA7gg9HKQMrbejcUim8J5741",
+          "tool": "add_to_cart",
+          "arguments": {
+            "product_id": "2570673854"
+          },
+          "elapsed_ms": 57.38,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_oVZ0QeIPsjHyfAiqzw6i9215",
+          "tool": "add_to_cart",
+          "arguments": {
+            "product_id": "3331336608"
+          },
+          "elapsed_ms": 94.09,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [
+        1.937
+      ],
+      "written_grounded": true,
+      "answer": "已完成，两件商品均已加入购物车，未下单：\n\n| 商品 | 品牌 | 价格 | 关键特点 |\n|---|---|---|---|\n| 无线鼠标 | UGREEN | ₱428 | 2.4G 无线（USB 接收器）、三档 DPI 1000/1600/2400、静音按键 |\n| 机械键盘 | Logitech G | ₱3,599 | 机械轴（触感轴）、TKL 紧凑无数字键区、防鬼键、型号 920-010448 |\n\n说明：\n- 鼠标这款是搜索结果中品牌与功能最明确的一款（可调 DPI + 静音），适合笔记本/办公使用；列表未标明颜色与电池类型。\n- 键盘是结果中唯一品牌明确的真机械键盘（罗技 G413 TKL SE，触感轴），为**有线**连接；同批还有一款 ₱335 的无品牌 104 键机械键盘作为备选。\n- 购物车现有 2 件商品，未创建订单。\n\n需要我调整选择、换成备选款，或把某件移出购物车吗？",
+      "elapsed_ms": 66369.58,
+      "child_calls": [
+        {
+          "id": "call_00_ET_SqwuHtSPYBnpZYA05IGa9386",
+          "tool": "product_search",
+          "arguments": {
+            "query": "mechanical keyboard",
+            "top_k": 5
+          },
+          "elapsed_ms": 43696.11,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_b8IvdX1itRfiCN91OdTv5720",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "3331336608",
+            "include_attributes": true
+          },
+          "elapsed_ms": 1.13,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_Rb8wlL8bEufOvas4Fo9H1377",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4994270941",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.23,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_3q45TNbPWUZxXGSCNN2T5890",
+          "tool": "product_search",
+          "arguments": {
+            "query": "wireless mouse",
+            "top_k": 5
+          },
+          "elapsed_ms": 46958.54,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_4OflG7iocNHqMCamdlmc6902",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "2570673854",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.07,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_zJWFxrhQcKSoY74HJJfw9290",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4166245946",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.03,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_02_EZQHUYuD2GRd63CJ0onM0842",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "5030582560",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ]
+    },
+    {
+      "case_id": "BX02",
+      "status": "ok",
+      "query": "找一个 Tecno Camon 30 钢化膜，再找一款 Acer Aspire 笔记本电池，两件都加入购物车，不要下单。",
+      "task": "cart_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 2,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search",
+        "add_to_cart",
+        "add_to_cart"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_1RBqXT4t8FeIpnyUTaK22163",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search for a tempered glass screen protector for a Tecno Camon 30 smartphone. Return candidate products with real product IDs, names, prices, and compatibility info. Read-only."
+          },
+          "elapsed_ms": 91905.82,
+          "batch_step": 0,
+          "parallel_batch_ms": 150499.35
+        },
+        {
+          "id": "call_01_9Ey0BDU6VbISjKkUIJVn3953",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search for a laptop battery for an Acer Aspire laptop. Return candidate products with real product IDs, names, prices, and compatibility/voltage info. Read-only."
+          },
+          "elapsed_ms": 150474.49,
+          "batch_step": 0,
+          "parallel_batch_ms": 150499.35
+        },
+        {
+          "id": "call_00_y5GJwkiH7WWVARYMbWzD7199",
+          "tool": "add_to_cart",
+          "arguments": {
+            "product_id": "4528277205"
+          },
+          "elapsed_ms": 120.83,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_GtJouuKPo1bo4MHf6BbP3900",
+          "tool": "add_to_cart",
+          "arguments": {
+            "product_id": "1567142503"
+          },
+          "elapsed_ms": 56.74,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [
+        1.611
+      ],
+      "written_grounded": true,
+      "answer": "已按你的要求把两件都加入购物车，未下单：\n\n1. **Tecno Camon 30 钢化膜** — 4528277205，￥45.5。3合1（屏幕玻璃 + 镜头膜 + 碳纤维背膜），适配 Camon 30 / Camon 30 5G / Camon 30 Pro 5G，销量 115，是同类中最热门的一款。\n2. **Acer Aspire 笔记本电池** — 1567142503（AL14A32），￥790。6 芯锂电，适配 Aspire E5-421 / 471 / 471G / 521 / 531 / 551 / 571 / 572 / 572G 及 V3-472 等机型。\n\n提醒：电池是按机型匹配的配件，你未指定具体 Aspire 型号，我选了覆盖机型较广、价格适中（￥790）的 AL14A32。若你的机器是 A315-56 / A317-52 这类，应换 AP19B8K（￥1398）更合适——告诉我具体型号，我可以帮你替换购物车里的电池。需要我调整吗？",
+      "elapsed_ms": 158412.6,
+      "child_calls": [
+        {
+          "id": "call_00_NGITzRy0y63VGH2luJKO7745",
+          "tool": "product_search",
+          "arguments": {
+            "query": "tempered glass screen protector for Tecno Camon 30",
+            "category": "screen protector",
+            "top_k": 8
+          },
+          "elapsed_ms": 43835.81,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_w7IK6HpOwxQdxVK3XCNM4850",
+          "tool": "product_search",
+          "arguments": {
+            "query": "Tecno Camon 30 tempered glass screen protector",
+            "requirements": "compatible with Tecno Camon 30",
+            "top_k": 8
+          },
+          "elapsed_ms": 40118.66,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_PURb6KBWxuwl8Uexavfl0086",
+          "tool": "product_search",
+          "arguments": {
+            "query": "laptop battery for Acer Aspire",
+            "category": "laptop battery",
+            "top_k": 8
+          },
+          "elapsed_ms": 9242.2,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_xhQCAvImBSMKkMyqpyxh0287",
+          "tool": "product_search",
+          "arguments": {
+            "query": "Acer Aspire replacement battery",
+            "top_k": 8
+          },
+          "elapsed_ms": 39674.2,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_ZaaXXobxaeRfGbD3nbFT5062",
+          "tool": "product_search",
+          "arguments": {
+            "query": "Acer laptop battery",
+            "top_k": 8
+          },
+          "elapsed_ms": 31698.75,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_02_rh4OCJSNOVBdS2BZaFb34663",
+          "tool": "product_search",
+          "arguments": {
+            "query": "notebook battery Acer Aspire",
+            "top_k": 8
+          },
+          "elapsed_ms": 26206.97,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_03_LGsx9lXJP3ESlq7Kpajt9438",
+          "tool": "product_search",
+          "arguments": {
+            "query": "battery",
+            "top_k": 8
+          },
+          "elapsed_ms": 29696.33,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_JYF40TzjrlKcrhBvQ9cp2925",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "1567142503",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.07,
+          "batch_step": 2,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_zPeHV9W5sVOhnnb8fTaM0279",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4024172786",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.08,
+          "batch_step": 2,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_02_FdZSBuhYfpXtRrwNtfxj6060",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "254124744",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 2,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_03_DhG8hXBNg7Z9O9WJ3k1Y6190",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "3905318374",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.4,
+          "batch_step": 2,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_04_km4T3A74bbzw46EECGgx0569",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "2117906",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.03,
+          "batch_step": 2,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_05_sNrlfQ8FadRlzWhBc55S8643",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "327780891",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.01,
+          "batch_step": 2,
+          "parallel_batch_ms": null
+        }
+      ]
+    },
+    {
+      "case_id": "BX03",
+      "status": "ok",
+      "query": "帮我找一件男士 T 恤和一个摩托车座套，两件都加进购物车，先别购买。",
+      "task": "cart_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 2,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search",
+        "add_to_cart",
+        "add_to_cart"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_7mvcXmaARbrYlQKVKn0s4910",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search the product catalog for a men's T-shirt. Use product_search with English keywords like \"men's t-shirt\". Return the top candidates with product IDs, names, prices, colors, and sizes. Only read-only search, do not modify anything."
+          },
+          "elapsed_ms": 74293.22,
+          "batch_step": 0,
+          "parallel_batch_ms": 74306.3
+        },
+        {
+          "id": "call_01_PIs0fYpxuUjzO03b1vQT6787",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search the product catalog for a motorcycle seat cover. Use product_search with English keywords like \"motorcycle seat cover\". Return the top candidates with product IDs, names, prices, and any relevant attributes. Only read-only search, do not modify anything."
+          },
+          "elapsed_ms": 63093.32,
+          "batch_step": 0,
+          "parallel_batch_ms": 74306.3
+        },
+        {
+          "id": "call_00_ltzRrBdk1HBWbObSGXsz1880",
+          "tool": "add_to_cart",
+          "arguments": {
+            "product_id": "4301715825"
+          },
+          "elapsed_ms": 97.93,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_ZyCfNViIHT1hMdATJPvW7412",
+          "tool": "add_to_cart",
+          "arguments": {
+            "product_id": "2176197040"
+          },
+          "elapsed_ms": 105.15,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ],
+      "parallel_speedups": [
+        1.849
+      ],
+      "written_grounded": true,
+      "answer": "两件商品都已加入购物车，未下单购买：\n\n| 商品 | 价格 | 说明 |\n|---|---|---|\n| 男士 T 恤（AP175） | 288.0 | 圆领、短袖、棉+氨纶、常规版型，尺码 M–3XL 齐全，销量 26 |\n| 摩托车座套（ANTI-SCRATCH） | 79.0 | 通用防刮/防磨损、弹力包边易安装，销量 56，是同类中人气最高 |\n\n最贴合需求的：T 恤选的是尺码最全、版型常规的基础款男士短袖；座套选的是销量最高、通用型防刮座套，适配多数摩托车型。\n\n需要的话我可以帮你改选其他款式（比如更便宜的座套 49 元、或 3 件装 T 恤），或确认后再下单。",
+      "elapsed_ms": 81365.32,
+      "child_calls": [
+        {
+          "id": "call_00_0kvMRJiZynL3QD7PRHIj6781",
+          "tool": "product_search",
+          "arguments": {
+            "query": "motorcycle seat cover"
+          },
+          "elapsed_ms": 60191.02,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_1Z5Wurf95vkKDqjqbjyP3306",
+          "tool": "product_search",
+          "arguments": {
+            "query": "men's t-shirt",
+            "top_k": 8
+          },
+          "elapsed_ms": 69171.69,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_wy0MvJ2RO9yInOCtSUnX4995",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4301715825",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.07,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_4AFKpmZNSQA4Ncf4hT4w8277",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4457785384",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_02_ux7KRROTJYwhi5YG2o820052",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4455595535",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_03_Mk75KzqhmITgRDAtzX2C1534",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4663748618",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_04_igmxEssabEsLLXFdxJRT4201",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "2655405867",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ]
+    },
+    {
+      "case_id": "BX04",
+      "status": "ok",
+      "query": "先查我目前购物车的状态，同时推荐一款蓝牙耳机；不要修改购物车，也不要下单。",
+      "task": "read_and_search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_zslBtu7AHZtrytHGorjC0892",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "只读任务：读取当前买家的购物车状态（cart），返回购物车内商品条目、数量与价格，不做任何修改。"
+          },
+          "elapsed_ms": 1693.17,
+          "batch_step": 0,
+          "parallel_batch_ms": 39100.0
+        },
+        {
+          "id": "call_01_r90Sd75ZytXEYrCq00245416",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "只读任务：搜索一款蓝牙耳机（Bluetooth earphones / wireless earbuds）作为推荐。用英文关键词检索商品，返回候选商品 ID、名称、价格与关键属性，不要加购或下单。"
+          },
+          "elapsed_ms": 39067.58,
+          "batch_step": 0,
+          "parallel_batch_ms": 39100.0
+        }
+      ],
+      "parallel_speedups": [
+        1.042
+      ],
+      "written_grounded": true,
+      "answer": "购物车状态与耳机推荐如下。\n\n**购物车（只读，未做任何修改）**\n- 当前为空：条目数 0，商品总数量 0，总价 0。\n\n**蓝牙耳机推荐**（未加购、未下单）\n最推荐：**TWS Pro60 Wireless Bluetooth Headset**（ID 4208008711，$154.67）\n- 带麦克风、主动降噪、立体声；销量 118，是候选里最热销的一款；价格在同类中偏低，性价比高，适合日常通勤与听歌通话。\n\n其他可选：\n- **SoundPEATS Air5 Lite**（ID 4837490811，$2399）：蓝牙 5.4、LDAC Hi-Res、AI 通话降噪、30 小时续航，品牌款，追求音质/续航可选。\n- **E6S TWS 防水降噪入耳**（ID 4208043525，$141.63）：蓝牙 5.1、防水、LED、带麦克风，预算敏感可选。\n\n如果你告诉我预算、佩戴形态（入耳/颈挂）或是否必须降噪，我可以再缩小范围；需要的话也可帮你把某款加入购物车（需你明确确认）。",
+      "elapsed_ms": 45705.47,
+      "child_calls": [
+        {
+          "id": "call_00_SXtGf4n2OHXWltu8EJ6N8611",
+          "tool": "read_state",
+          "arguments": {
+            "kind": "cart"
+          },
+          "elapsed_ms": 379.66,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_5WIWLwdrrkl2OyBRSUMh5222",
+          "tool": "product_search",
+          "arguments": {
+            "query": "Bluetooth earphones wireless earbuds",
+            "top_k": 8
+          },
+          "elapsed_ms": 34674.54,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_1zKbHadsWzuhtUCfSJ7p5535",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4837490811",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.06,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_wUa015vZyPrtTcKg39qA3839",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4208008711",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ]
+    },
+    {
+      "case_id": "BX05",
+      "status": "ok",
+      "query": "先看看我有哪些历史订单，同时帮我找一款手机充电线；这次只查不买。",
+      "task": "read_and_search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_s0wTpQgC7xr9ksdSy2US6364",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Read the buyer's order history (read-only). Use read_state with kind=\"orders\" and report every order with its real order ID, item name, price, quantity, and status. Do not modify anything."
+          },
+          "elapsed_ms": 1770.5,
+          "batch_step": 0,
+          "parallel_batch_ms": 32800.91
+        },
+        {
+          "id": "call_01_FxLCC810GI88Ph53fsNR3654",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search for a phone charging cable. English keywords: \"phone charging cable\". No budget was specified by the buyer. Return the top candidates with product_id, title, price, and key attributes. Read-only, do not purchase or add to cart."
+          },
+          "elapsed_ms": 32752.03,
+          "batch_step": 0,
+          "parallel_batch_ms": 32800.91
+        }
+      ],
+      "parallel_speedups": [
+        1.052
+      ],
+      "written_grounded": true,
+      "answer": "查询完成，以下是结果：\n\n**一、历史订单**\n你的订单历史目前是**空的**——账号里没有任何订单记录（无订单 ID、商品、金额或状态）。如需，我可以再帮你查看购物车或收藏。\n\n**二、手机充电线候选**（共召回 20 件，仅展示，未加购未下单）\n\n| # | 商品 | 价格 | 接口/关键点 |\n|---|---|---|---|\n| 1 | Thunlit 充电线 1.5m 5V/1A | 89.0 | Type-C/Micro USB，白色，不支持数据传输 |\n| 2 | KULLA 液态硅胶数据线 | 35.0 | Type-C，硅胶外皮，最高 2.4A |\n| 3 | KUULAA Micro USB 线 | 95.13 | Micro USB，尼龙外皮，最高 2.4A |\n| 4 | NNBILI 10 合 1 多头充电线 | 60.09 | 多头通用（三星/诺基亚等），黑色 |\n| 5 | 10 合 1 多口通用充电线 | 66.46 | 多头通用，黑色 |\n| 6 | 4 合 1 快充线 Type-C to Type-C | 152.48 | 240W，1m，白色，RGB 发光 |\n| 7 | 1m USB 充电线 Android 2A | 59.0 | 纯铜，2A，未标明接口 |\n| 8 | 20W Type-C 快充线 + 适配器 | 195.0 | 归在充电器类目 |\n\n价格区间 35–195 元，各款销量都较低（1–3 件）。\n\n**最可能满足需求的一款**：如果你要的是通用手机充电线，**#4 NNBILI 10 合 1 多头充电线（60.09 元）**兼容性最广，三星、诺基亚等多机型通用，不用纠结接口。\n\n不过你的手机接口（Type-C 还是 Micro USB）没说明，若能告知，我可以再按接口、长度或品牌精准筛一轮。要不要我顺便看看购物车或收藏？",
+      "elapsed_ms": 40190.3,
+      "child_calls": [
+        {
+          "id": "call_00_ET_ygHgs6MPirWCvC5lOtqs1665",
+          "tool": "read_state",
+          "arguments": {
+            "kind": "orders"
+          },
+          "elapsed_ms": 58.56,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_ET_ZtU1TGMc88AfS6Q23NtQ7767",
+          "tool": "product_search",
+          "arguments": {
+            "query": "phone charging cable",
+            "top_k": 8
+          },
+          "elapsed_ms": 24047.3,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_59H7ShlSrXwEnW6HVVfG2853",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "3842096407",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.07,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_01_udrhF98YLtjyCcM12twq6235",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "734702497",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_02_MFc5AspGzSIbcqVmJuka3384",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "5061142976",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_03_alGSlPrNWK5OmUCkOqex4828",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "5099447868",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.02,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ]
+    },
+    {
+      "case_id": "BX06",
+      "status": "ok",
+      "query": "帮我同时比较一款无线鼠标和一款无线键盘，各给我至少一件商品，不要加入购物车或购买。",
+      "task": "search_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "delegate_search",
+        "delegate_search"
+      ],
+      "tool_calls": [
+        {
+          "id": "call_00_3q1MFgeB68eOul9AVQ6s8615",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search for one wireless mouse product. Query keywords: \"wireless mouse\". No brand/color/size constraints. Return the best candidate with product_id, title, key specs, and price. Read-only, do not modify anything."
+          },
+          "elapsed_ms": 47139.99,
+          "batch_step": 0,
+          "parallel_batch_ms": 47154.31
+        },
+        {
+          "id": "call_01_7D0h4qWjfBUbiCycp98x2184",
+          "tool": "delegate_search",
+          "arguments": {
+            "task": "Search for one wireless keyboard product. Query keywords: \"wireless keyboard\". No brand/color/size constraints. Return the best candidate with product_id, title, key specs, and price. Read-only, do not modify anything."
+          },
+          "elapsed_ms": 44846.58,
+          "batch_step": 0,
+          "parallel_batch_ms": 47154.31
+        }
+      ],
+      "parallel_speedups": [
+        1.951
+      ],
+      "written_grounded": true,
+      "answer": "已并行完成两路只读搜索，未加入购物车、未下单。以下是各一件候选对比：\n\n**🖱️ 无线鼠标**\n- **UGREEN 无线鼠标**（ID `2570673854`）— ¥428\n- 2.4G 无线连接；三档 DPI 可调（1000 / 1600 / 2400）；静音按键；USB 接收器；品牌售后相对可靠\n- 备选：`4364924686` 超薄静音蓝牙鼠标 ¥88（便宜，无品牌）\n\n**⌨️ 无线键盘**\n- **GOOJODOQ 无线蓝牙键盘**（ID `4174437912`）— ¥679\n- 102 键带数字小键盘；双模无线（蓝牙 + 2.4G）；标注为键鼠套装；兼容 Macbook / 笔记本 / 台式机；销量 296（候选中最热销）\n- 备选：Dell 无线键鼠套装 `1543318784` ¥569；I8 Mini 迷你键盘（带触控板）`4513197153` ¥159\n\n**简要建议**\n- 若你想要**独立、品牌化的鼠标**，UGREEN ¥428 的静音 + 可调 DPI 是这次鼠标候选里规格最全的一款。\n- 若你要的是**纯键盘**，需注意 GOOJODOQ 实为“键盘+鼠标套装”，并非单键盘；预算敏感可看 I8 Mini ¥159。\n\n需要我按某个价位或“只要单键盘/单鼠标”重新筛一轮吗？确认后再决定是否加购或下单。",
+      "elapsed_ms": 53018.26,
+      "child_calls": [
+        {
+          "id": "call_00_dmhc6t30wBpPUWoiVCv00846",
+          "tool": "product_search",
+          "arguments": {
+            "query": "wireless keyboard",
+            "top_k": 5
+          },
+          "elapsed_ms": 41303.31,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_YE84ULq21sd3P34QS1nZ3426",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "4174437912",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.06,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_ET_DCYMa5VXoFtcgyEmQzSq7337",
+          "tool": "product_search",
+          "arguments": {
+            "query": "wireless mouse",
+            "top_k": 5
+          },
+          "elapsed_ms": 43770.17,
+          "batch_step": 0,
+          "parallel_batch_ms": null
+        },
+        {
+          "id": "call_00_tbcUaqAR3aP7wAEtfHCV0812",
+          "tool": "get_product_details",
+          "arguments": {
+            "product_id": "2570673854",
+            "include_attributes": true
+          },
+          "elapsed_ms": 0.04,
+          "batch_step": 1,
+          "parallel_batch_ms": null
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "task_success": 1.0,
+    "delegation_rate": 1.0,
+    "unwanted_buy_count": 0,
+    "parallel_batches": 6,
+    "mean_parallel_speedup": 1.574,
+    "tool_steps_mean": 3.0,
+    "grounded_write_rate": 1.0,
+    "p50_ms": 59693.92,
+    "p95_ms": 139150.78
+  }
+}

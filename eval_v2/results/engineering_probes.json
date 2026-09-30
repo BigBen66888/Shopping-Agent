@@ -1,0 +1,179 @@
+{
+  "permission": {
+    "attempts": 2,
+    "denied": [
+      "buy_now",
+      "product_search"
+    ],
+    "unauthorized_executed": 0
+  },
+  "parallel": {
+    "calls": [
+      "delegate_search",
+      "delegate_shop"
+    ],
+    "parallel_seconds": 0.264,
+    "serial_reference_seconds": 0.5,
+    "speedup": 1.9
+  },
+  "grounded_writes": {
+    "cases": 29,
+    "write_cases": 13,
+    "grounded_write_rate": 1.0,
+    "rows": [
+      {
+        "case_id": "B01",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B02",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B03",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B04",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B05",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B06",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B07",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B08",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B09",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B10",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B11",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B12",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B13",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B14",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B15",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B16",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B17",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B18",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B19",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "B20",
+        "written_count": 1,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BP01",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BP02",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BP03",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BX01",
+        "written_count": 2,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BX02",
+        "written_count": 2,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BX03",
+        "written_count": 2,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BX04",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BX05",
+        "written_count": 0,
+        "not_displayed": []
+      },
+      {
+        "case_id": "BX06",
+        "written_count": 0,
+        "not_displayed": []
+      }
+    ]
+  },
+  "memory_store": {
+    "first_saved": true,
+    "duplicate_rejected": true,
+    "cross_session_found": true,
+    "injected_count": 12,
+    "injection_limit": 12,
+    "semantic_conflict_both_active": true
+  }
+}

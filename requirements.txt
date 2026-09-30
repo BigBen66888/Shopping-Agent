@@ -1,0 +1,10 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+pydantic>=2.7,<3
+python-dotenv>=1.0,<2
+httpx>=0.27,<1
+openai>=1.40,<3
+numpy>=1.26,<3
+sentence-transformers>=3,<6
+faiss-cpu>=1.8,<2
+huggingface_hub>=0.25,<1

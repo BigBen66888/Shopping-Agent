@@ -1,0 +1,354 @@
+{
+  "cases": 20,
+  "completed": 20,
+  "metrics": {
+    "compression_triggered": 1.0,
+    "position_ok": 1.0,
+    "within_budget": 1.0,
+    "summary_fidelity": 1.0,
+    "probe_correct": 0.85
+  },
+  "compression_p95_ms": 2279.966,
+  "rows": [
+    {
+      "case_id": "C01",
+      "status": "ok",
+      "summary": "用户计划购买机械键盘，预算为500元。用户表示想先看看有哪些选择，并询问了材质相关问题。目前未提及品牌、具体规格、用途或已选商品。",
+      "answer": "你最早说的具体要求是：购买机械键盘，预算500元。",
+      "expected_terms": [
+        "500"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 187,
+      "after_tokens": 251,
+      "compress_ms": 2285.22
+    },
+    {
+      "case_id": "C02",
+      "status": "ok",
+      "summary": "用户计划购买显示器，预算 1200 元；表示先看看有哪些选择；询问可以讲讲材质。",
+      "answer": "你最早说的具体要求是：计划购买显示器，预算 1200 元。",
+      "expected_terms": [
+        "1200"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 186,
+      "after_tokens": 226,
+      "compress_ms": 1274.41
+    },
+    {
+      "case_id": "C03",
+      "status": "ok",
+      "summary": "用户要蓝色耳机；想先看看有哪些选择；并询问能否讲解材质。尚无预算、品牌、规格或已选商品信息。",
+      "answer": "要蓝色耳机。",
+      "expected_terms": [
+        "蓝色"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 180,
+      "after_tokens": 235,
+      "compress_ms": 1301.94
+    },
+    {
+      "case_id": "C04",
+      "status": "ok",
+      "summary": "用户要给父亲买鞋，鞋码是42。用户想先看看有哪些选择，并询问鞋子材质。目前未提到预算、品牌、具体用途或偏好，也尚未比较或选定具体商品；待了解可选款式及材质。",
+      "answer": "给父亲买鞋，鞋码42。",
+      "expected_terms": [
+        "42"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 183,
+      "after_tokens": 263,
+      "compress_ms": 1963.79
+    },
+    {
+      "case_id": "C05",
+      "status": "ok",
+      "summary": "用户表示只考虑罗技鼠标；要求先看看有哪些选择；并询问能否讲讲材质。",
+      "answer": "只考虑罗技鼠标。",
+      "expected_terms": [
+        "罗技"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 182,
+      "after_tokens": 224,
+      "compress_ms": 1355.28
+    },
+    {
+      "case_id": "C06",
+      "status": "ok",
+      "summary": "用户想买能装 15 英寸电脑的背包；目前处于初步浏览阶段，先想看看有哪些选择，并询问过材质相关信息。尚未提及预算、品牌、具体款式或已选商品。",
+      "answer": "能装 15 英寸电脑的背包。",
+      "expected_terms": [
+        "15"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 184,
+      "after_tokens": 255,
+      "compress_ms": 1540.84
+    },
+    {
+      "case_id": "C07",
+      "status": "ok",
+      "summary": "用户表示相机电池型号是 NP-FW50；用户希望先看看有哪些选择；用户还询问是否可以讲讲材质。",
+      "answer": "",
+      "expected_terms": [
+        "NP-FW50"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": false,
+      "before_tokens": 183,
+      "after_tokens": 232,
+      "compress_ms": 1149.79
+    },
+    {
+      "case_id": "C08",
+      "status": "ok",
+      "summary": "用户手机型号为 Tecno Camon 30；用户表示先看看有哪些选择；用户询问可否讲讲材质。",
+      "answer": "",
+      "expected_terms": [
+        "Camon 30"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": false,
+      "before_tokens": 182,
+      "after_tokens": 227,
+      "compress_ms": 1189.99
+    },
+    {
+      "case_id": "C09",
+      "status": "ok",
+      "summary": "用户要求充电器必须支持65W；表示先看看有哪些选择；并询问可否讲讲材质。",
+      "answer": "你最早说的具体要求是：充电器必须支持65W。",
+      "expected_terms": [
+        "65W"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 182,
+      "after_tokens": 225,
+      "compress_ms": 1526.79
+    },
+    {
+      "case_id": "C10",
+      "status": "ok",
+      "summary": "用户表示裙子要绿色；目前想先看看有哪些选择，并询问材质。尚未提供预算、品牌、规格或用途，也未选定具体商品；查看选择和介绍材质的需求待完成。",
+      "answer": "你最早说的具体要求是：裙子要绿色。",
+      "expected_terms": [
+        "绿色"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 182,
+      "after_tokens": 256,
+      "compress_ms": 2279.69
+    },
+    {
+      "case_id": "C11",
+      "status": "ok",
+      "summary": "用户手表表带宽度为 22 毫米。用户想先查看有哪些表带选择，并询问表带的材质情况；目前尚未提供具体选择或材质说明。",
+      "answer": "你最早说的是：手表表带宽度为 22 毫米；想先查看有哪些表带选择，并询问表带的材质情况。",
+      "expected_terms": [
+        "22"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 186,
+      "after_tokens": 244,
+      "compress_ms": 1809.82
+    },
+    {
+      "case_id": "C12",
+      "status": "ok",
+      "summary": "用户想购买可通过蓝牙连接的音箱；先要求查看有哪些选择，并询问能否讲解材质。未提及预算、品牌、规格、用途等偏好；暂无已比较或已选择的商品。",
+      "answer": "您最早说想购买可通过蓝牙连接的音箱，并要求查看有哪些选择、询问能否讲解材质。",
+      "expected_terms": [
+        "蓝牙"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 184,
+      "after_tokens": 255,
+      "compress_ms": 1997.46
+    },
+    {
+      "case_id": "C13",
+      "status": "ok",
+      "summary": "用户要求键盘必须是 87 键；想先看看有哪些选择，并询问键盘材质。",
+      "answer": "键盘必须是 87 键。",
+      "expected_terms": [
+        "87"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 181,
+      "after_tokens": 221,
+      "compress_ms": 1026.68
+    },
+    {
+      "case_id": "C14",
+      "status": "ok",
+      "summary": "用户提到笔记本型号为 Acer Aspire；表示想先看看有哪些选择；询问是否可以讲讲材质。",
+      "answer": "",
+      "expected_terms": [
+        "Acer Aspire"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": false,
+      "before_tokens": 183,
+      "after_tokens": 228,
+      "compress_ms": 1427.66
+    },
+    {
+      "case_id": "C15",
+      "status": "ok",
+      "summary": "用户想买鼠标，预算上限 200 元，不能超过。用户先要求查看有哪些可选商品，随后询问鼠标材质相关信息。目前尚未提出具体品牌、规格或用途偏好，也未确定或比较任何商品。",
+      "answer": "买鼠标，预算上限 200 元，不能超过。",
+      "expected_terms": [
+        "200"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 184,
+      "after_tokens": 266,
+      "compress_ms": 1161.2
+    },
+    {
+      "case_id": "C16",
+      "status": "ok",
+      "summary": "用户要求水杯容量至少 500 毫升；希望先查看有哪些选择；并询问能否介绍材质。尚未提及预算、品牌、其他规格、用途或偏好。",
+      "answer": "水杯容量至少 500 毫升。",
+      "expected_terms": [
+        "500"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 182,
+      "after_tokens": 244,
+      "compress_ms": 1038.14
+    },
+    {
+      "case_id": "C17",
+      "status": "ok",
+      "summary": "用户想给孩子买衣服，孩子年龄 3 岁。用户先想看看有哪些选择，并询问能否介绍材质。目前未提及预算、品牌、规格、颜色、用途偏好，也未比较或选定具体商品。",
+      "answer": "最早说的是：给孩子买衣服，孩子年龄 3 岁；想先看看有哪些选择，并询问能否介绍材质。",
+      "expected_terms": [
+        "3"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 185,
+      "after_tokens": 259,
+      "compress_ms": 1458.37
+    },
+    {
+      "case_id": "C18",
+      "status": "ok",
+      "summary": "用户表示电视柜只能放 55 英寸电视；想先看看有哪些选择；并询问可否讲讲材质。尚未提及预算、品牌、具体商品或已选商品。",
+      "answer": "电视柜只能放 55 英寸电视。",
+      "expected_terms": [
+        "55"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 185,
+      "after_tokens": 245,
+      "compress_ms": 1340.33
+    },
+    {
+      "case_id": "C19",
+      "status": "ok",
+      "summary": "用户希望运动鞋是黑色；先想查看有哪些选择；并询问材质。",
+      "answer": "运动鞋要黑色。",
+      "expected_terms": [
+        "黑色"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 183,
+      "after_tokens": 218,
+      "compress_ms": 1289.9
+    },
+    {
+      "case_id": "C20",
+      "status": "ok",
+      "summary": "用户表示电源适配器输出电压需要 19V；希望先看看有哪些选择；并询问能否讲讲材质。暂无预算、品牌、规格等其他偏好，尚未比较或选择商品。",
+      "answer": "电源适配器输出电压需要 19V。",
+      "expected_terms": [
+        "19V"
+      ],
+      "compression_triggered": true,
+      "position_ok": true,
+      "within_budget": true,
+      "summary_fidelity": true,
+      "probe_correct": true,
+      "before_tokens": 186,
+      "after_tokens": 252,
+      "compress_ms": 1245.42
+    }
+  ]
+}

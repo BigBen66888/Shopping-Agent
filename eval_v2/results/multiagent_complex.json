@@ -1,0 +1,125 @@
+{
+  "cases": 6,
+  "completed": 6,
+  "metrics": {
+    "task_success": 1.0,
+    "unwanted_buy_count": 0,
+    "delegation_rate": 0.0,
+    "p50_ms": 44150.775,
+    "p95_ms": 55697.637
+  },
+  "rows": [
+    {
+      "case_id": "BX01",
+      "status": "ok",
+      "query": "帮我分别找一款无线鼠标和一款机械键盘，两种商品都加入购物车，不要下单。它们是独立的搜索任务，可以同时处理。",
+      "task": "cart_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 2,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search",
+        "add_to_cart",
+        "add_to_cart"
+      ],
+      "answer": "两款商品都已加入购物车（未下单）：\n\n- **无线鼠标**：KACOOL 无线鼠标（Bluetooth 5.1 / USB 2.4G 双模、可充电、带背光、静音按键、人体工学），¥110，销量 129。\n- **机械键盘**：104 键 RGB 机械键盘（金属面板、附手机支架槽），¥335。\n\n购物车共 2 件，合计 ¥445。需要我帮你结算下单，或调整型号/预算吗？",
+      "elapsed_ms": 47271.63
+    },
+    {
+      "case_id": "BX02",
+      "status": "ok",
+      "query": "找一个 Tecno Camon 30 钢化膜，再找一款 Acer Aspire 笔记本电池，两件都加入购物车，不要下单。",
+      "task": "cart_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 2,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search",
+        "add_to_cart",
+        "add_to_cart"
+      ],
+      "answer": "两件商品已加入购物车，未下单。\n\n- **Tecno Camon 30 钢化膜**（¥75）：专为 Camon 30 / Camon 30 Pro 设计，全屏覆盖，含摄像头镜头膜 + 碳纤维背膜，3 合 1。\n- **Acer Aspire 笔记本电池**（¥1398）：AP19B8K，锂电 11.25V / 41.76Wh，黑色，兼容 Acer Aspire A315-56、A317-52、SF314-42 等机型。\n\n购物车现有 2 件，共 ¥1473。需要我帮你整理或结算吗？",
+      "elapsed_ms": 41029.92
+    },
+    {
+      "case_id": "BX03",
+      "status": "ok",
+      "query": "帮我找一件男士 T 恤和一个摩托车座套，两件都加进购物车，先别购买。",
+      "task": "cart_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 2,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search",
+        "product_search",
+        "add_to_cart",
+        "add_to_cart"
+      ],
+      "answer": "已按你的要求找好并加入购物车，未下单：\n\n1. **男士 T 恤**：Mens T-Shirt Casual Premium Quality Cotton Fabric（¥168）— 100% 纯棉、圆领短袖、常规版型，简约休闲款，四季可穿。\n2. **摩托车座套**：Seat Cover Motorcycle Universal Net Seat Padding（¥59）— 通用款，防水、透气快干，内衬网状坐垫设计，适配多种车型。\n\n两件合计 ¥227。需要我帮你从购物车创建订单吗？",
+      "elapsed_ms": 48521.6
+    },
+    {
+      "case_id": "BX04",
+      "status": "ok",
+      "query": "先查我目前购物车的状态，同时推荐一款蓝牙耳机；不要修改购物车，也不要下单。",
+      "task": "read_and_search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state",
+        "product_search"
+      ],
+      "answer": "购物车当前为空；耳机搜索已返回候选，我推荐配置最完整的一款。\n\n**购物车状态**：空购物车（0 件商品，合计 0）。本次仅读取，未做任何修改，也未下单。\n\n**蓝牙耳机推荐**：KOORFLY EP800 无线耳机（¥299）\n- 蓝牙 5.4，连接更稳定、低延迟；\n- 支持主动降噪 + 麦克风，通话/听歌清晰；\n- IP7 防水，适合运动通勤；\n- 立体声低音调音。\n\n其余候选如磁吸颈挂式（¥279）、入门款（¥99–174）也有货，若你有预算、佩戴方式（入耳/颈挂/头戴）或降噪等偏好，告诉我我再精确筛选。需要我把它加入购物车吗？",
+      "elapsed_ms": 19300.88
+    },
+    {
+      "case_id": "BX05",
+      "status": "ok",
+      "query": "先看看我有哪些历史订单，同时帮我找一款手机充电线；这次只查不买。",
+      "task": "read_and_search",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 5,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "read_state",
+        "product_search"
+      ],
+      "answer": "抱歉，你的历史订单目前是空的（0 条），没有可查看的订单记录。\n\n充电线方面已找出几款候选：\n\n| 商品 | 价格 | 特点 |\n|---|---|---|\n| Original Fast Charging Cable Micro USB / Type-C | ¥11 | 销量较高（148），1米，适配安卓/华为 |\n| 3 in 1 USB Charging Cable | ¥45 | Type-C + Lightning + Micro USB 三合一 |\n| 4 in 1 240W Super Fast | ¥59.99 | 1.5米，锌合金+硅胶，多用接口 |\n| NNBILI 10 in 1 多功能 | ¥60.09 | 多头通用，适配三星/诺基亚 |\n| DIMD KULLA Type-C 数据线 | ¥35 | 硅胶软胶，3A 快充 |\n\n最可能符合一般需求的是 **Original Fast Charging Cable（¥11）**：价格实惠、销量最高，1 米 Micro USB / Type-C 通用，适配安卓、华为等主流手机快充。\n\n这次按你要求只查不买，未做任何下单操作。需要我帮你把某一款加入收藏或购物车吗？",
+      "elapsed_ms": 23679.19
+    },
+    {
+      "case_id": "BX06",
+      "status": "ok",
+      "query": "帮我同时比较一款无线鼠标和一款无线键盘，各给我至少一件商品，不要加入购物车或购买。",
+      "task": "search_two",
+      "success": true,
+      "no_unwanted_buy": true,
+      "product_count": 8,
+      "cart_count": 0,
+      "order_count": 0,
+      "calls": [
+        "product_search",
+        "product_search",
+        "product_search",
+        "get_product_details",
+        "get_product_details"
+      ],
+      "answer": "已找到的候选（未加入购物车、未下单）：\n\n**无线鼠标**\n- **KACOOL 无线鼠标**（Popcorn，¥110.0，销量 129）· ID 4568839670\n  - 蓝牙 5.1 + 2.4G USB 双模，可充电，带背光，静音按键\n  - 人体工学弧形设计，适合笔记本/台式办公\n\n**无线键盘**\n- **蓝牙无线迷你键盘**（¥222.44，销量 7）· ID 4549975694\n  - 蓝牙连接、可充电，兼容 Android / iOS / Windows，适配笔记本、平板、iPad、手机\n  - 薄膜键盘，便携小尺寸\n- 备选（全尺寸办公向）：**UGREEN 2.4G 无线键盘 104 键**（¥1689.0，销量 7）· ID 3669149667\n\n**对比小结**\n- 价格：KACOOL 鼠标 ¥110 更亲民；迷你键盘 ¥222.44，比 UGREEN 全尺寸（¥1689）便宜很多。\n- 连接：鼠标支持蓝牙+2.4G 双模；迷你键盘为纯蓝牙，UGREEN 为 2.4G。\n- 适用场景：鼠标静音+背光+人体工学，办公/移动通用；迷你键盘胜在便携多设备，若需要 104 全键数字区办公打字，UGREEN 更合适。\n\n最可能满足\"日常办公无线外设、预算可控\"的组合是 KACOOL 鼠标 + 蓝牙迷你键盘。需要我进一步查规格细节，或把它们加入收藏/购物车吗？",
+      "elapsed_ms": 58089.65
+    }
+  ]
+}

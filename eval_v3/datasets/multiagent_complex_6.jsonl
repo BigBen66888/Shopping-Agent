@@ -1,0 +1,6 @@
+{"case_id":"BX01","query":"帮我分别找一款无线鼠标和一款机械键盘，两种商品都加入购物车，不要下单。它们是独立的搜索任务，可以同时处理。","task":"cart_two","allow_buy":false}
+{"case_id":"BX02","query":"找一个 Tecno Camon 30 钢化膜，再找一款 Acer Aspire 笔记本电池，两件都加入购物车，不要下单。","task":"cart_two","allow_buy":false}
+{"case_id":"BX03","query":"帮我找一件男士 T 恤和一个摩托车座套，两件都加进购物车，先别购买。","task":"cart_two","allow_buy":false}
+{"case_id":"BX04","query":"先查我目前购物车的状态，同时推荐一款蓝牙耳机；不要修改购物车，也不要下单。","task":"read_and_search","allow_buy":false}
+{"case_id":"BX05","query":"先看看我有哪些历史订单，同时帮我找一款手机充电线；这次只查不买。","task":"read_and_search","allow_buy":false}
+{"case_id":"BX06","query":"帮我同时比较一款无线鼠标和一款无线键盘，各给我至少一件商品，不要加入购物车或购买。","task":"search_two","allow_buy":false}

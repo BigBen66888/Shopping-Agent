@@ -1,0 +1,806 @@
+{
+  "cases": 50,
+  "processed": 50,
+  "rows": [
+    {
+      "case_id": "O001",
+      "product_id": "591486855",
+      "queries": {
+        "stopwords": "m b20 cast bronze crash cymbals hybrid ghost",
+        "stopwords_no_price": "m b20 cast bronze crash cymbals hybrid ghost"
+      },
+      "ranks": {
+        "stopwords": 4,
+        "stopwords_no_price": 4
+      },
+      "ms": {
+        "stopwords": 481.26,
+        "stopwords_no_price": 420.01
+      }
+    },
+    {
+      "case_id": "O002",
+      "product_id": "4410867766",
+      "queries": {
+        "stopwords": "12 inch heavy duty rubber wheel pushcart",
+        "stopwords_no_price": "12 inch heavy duty rubber wheel pushcart"
+      },
+      "ranks": {
+        "stopwords": 38,
+        "stopwords_no_price": 38
+      },
+      "ms": {
+        "stopwords": 931.13,
+        "stopwords_no_price": 848.05
+      }
+    },
+    {
+      "case_id": "O003",
+      "product_id": "2155232803",
+      "queries": {
+        "stopwords": "pack bags chili powder 375",
+        "stopwords_no_price": "pack bags chili powder"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 741.6,
+        "stopwords_no_price": 774.65
+      }
+    },
+    {
+      "case_id": "O004",
+      "product_id": "5113553158",
+      "queries": {
+        "stopwords": "women s jeans size eu 30 baggy fit high waist made denim plain design 114",
+        "stopwords_no_price": "women s jeans size eu 30 baggy fit high waist made denim plain design"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 5563.84,
+        "stopwords_no_price": 5495.0
+      }
+    },
+    {
+      "case_id": "O005",
+      "product_id": "4063980166",
+      "queries": {
+        "stopwords": "toner psph beauty 98",
+        "stopwords_no_price": "toner psph beauty"
+      },
+      "ranks": {
+        "stopwords": 23,
+        "stopwords_no_price": 23
+      },
+      "ms": {
+        "stopwords": 466.09,
+        "stopwords_no_price": 460.88
+      }
+    },
+    {
+      "case_id": "O006",
+      "product_id": "4246274786",
+      "queries": {
+        "stopwords": "building blocks kids aged 8 lazflash deals 35",
+        "stopwords_no_price": "building blocks kids aged 8 lazflash deals"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 772.41,
+        "stopwords_no_price": 887.9
+      }
+    },
+    {
+      "case_id": "O007",
+      "product_id": "2402613989",
+      "queries": {
+        "stopwords": "supplements 189 match muscletech celltech creactor 120 servings",
+        "stopwords_no_price": "supplements match muscletech celltech creactor 120 servings"
+      },
+      "ranks": {
+        "stopwords": 2,
+        "stopwords_no_price": 2
+      },
+      "ms": {
+        "stopwords": 174.94,
+        "stopwords_no_price": 184.04
+      }
+    },
+    {
+      "case_id": "O008",
+      "product_id": "3548752288",
+      "queries": {
+        "stopwords": "m heavy duty stainless steel gate roller wheel v u type bearings hardware category",
+        "stopwords_no_price": "m heavy duty stainless steel gate roller wheel v u type bearings hardware category"
+      },
+      "ranks": {
+        "stopwords": 11,
+        "stopwords_no_price": 11
+      },
+      "ms": {
+        "stopwords": 3222.82,
+        "stopwords_no_price": 2839.32
+      }
+    },
+    {
+      "case_id": "O009",
+      "product_id": "4376265856",
+      "queries": {
+        "stopwords": "silver nail remover care category lazmall perks 26",
+        "stopwords_no_price": "silver nail remover care category lazmall perks"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 707.93,
+        "stopwords_no_price": 622.23
+      }
+    },
+    {
+      "case_id": "O010",
+      "product_id": "2966226187",
+      "queries": {
+        "stopwords": "basic calculators orange 1 piece run batteries 176",
+        "stopwords_no_price": "basic calculators orange 1 piece run batteries"
+      },
+      "ranks": {
+        "stopwords": 23,
+        "stopwords_no_price": 19
+      },
+      "ms": {
+        "stopwords": 1548.49,
+        "stopwords_no_price": 1967.77
+      }
+    },
+    {
+      "case_id": "O011",
+      "product_id": "4887119414",
+      "queries": {
+        "stopwords": "oem brand wind guide cover butterfly motorcycle models more than 63",
+        "stopwords_no_price": "oem brand wind guide cover butterfly motorcycle models"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 2926.42,
+        "stopwords_no_price": 2576.81
+      }
+    },
+    {
+      "case_id": "O012",
+      "product_id": "5067792218",
+      "queries": {
+        "stopwords": "kids t shirt color 04 size 110 perfect summer made polyester suitable everyday wear round neckline cartoon print oem brand",
+        "stopwords_no_price": "kids t shirt color 04 size 110 perfect summer made polyester suitable everyday wear round neckline cartoon print oem brand"
+      },
+      "ranks": {
+        "stopwords": 34,
+        "stopwords_no_price": 34
+      },
+      "ms": {
+        "stopwords": 5646.2,
+        "stopwords_no_price": 5481.59
+      }
+    },
+    {
+      "case_id": "O013",
+      "product_id": "4644530785",
+      "queries": {
+        "stopwords": "unisex black sneakers hook loop closure model shoes lazflash deals 55",
+        "stopwords_no_price": "unisex black sneakers hook loop closure model shoes lazflash deals"
+      },
+      "ranks": {
+        "stopwords": 15,
+        "stopwords_no_price": 15
+      },
+      "ms": {
+        "stopwords": 2087.85,
+        "stopwords_no_price": 2098.91
+      }
+    },
+    {
+      "case_id": "O014",
+      "product_id": "3350592664",
+      "queries": {
+        "stopwords": "grey unisex racing t shirt extra small 324 623",
+        "stopwords_no_price": "grey unisex racing t shirt extra small"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 1181.4,
+        "stopwords_no_price": 1068.4
+      }
+    },
+    {
+      "case_id": "O015",
+      "product_id": "5061956159",
+      "queries": {
+        "stopwords": "car sponge pads pack 10 15 37",
+        "stopwords_no_price": "car sponge pads pack 10"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 1161.78,
+        "stopwords_no_price": 969.76
+      }
+    },
+    {
+      "case_id": "O016",
+      "product_id": "4350221307",
+      "queries": {
+        "stopwords": "black abs pipe fitting 125mm size 26 82",
+        "stopwords_no_price": "black abs pipe fitting 125mm size"
+      },
+      "ranks": {
+        "stopwords": 7,
+        "stopwords_no_price": 6
+      },
+      "ms": {
+        "stopwords": 1734.96,
+        "stopwords_no_price": 1629.89
+      }
+    },
+    {
+      "case_id": "O017",
+      "product_id": "4916453620",
+      "queries": {
+        "stopwords": "vktech motion sensor security systems preferably detector switch led lights",
+        "stopwords_no_price": "vktech motion sensor security systems preferably detector switch led lights"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 437.35,
+        "stopwords_no_price": 462.16
+      }
+    },
+    {
+      "case_id": "O018",
+      "product_id": "3998309982",
+      "queries": {
+        "stopwords": "masstige brand soap bars complimentary shipping 81",
+        "stopwords_no_price": "masstige brand soap bars complimentary shipping"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 2030.93,
+        "stopwords_no_price": 2026.37
+      }
+    },
+    {
+      "case_id": "O019",
+      "product_id": "5118635161",
+      "queries": {
+        "stopwords": "ratchet wrenches 3 8 size 97",
+        "stopwords_no_price": "ratchet wrenches 3 8 size"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 2220.89,
+        "stopwords_no_price": 2331.31
+      }
+    },
+    {
+      "case_id": "O020",
+      "product_id": "262072305",
+      "queries": {
+        "stopwords": "pack insecticide spray bugs 70 333",
+        "stopwords_no_price": "pack insecticide spray bugs"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 461.61,
+        "stopwords_no_price": 380.5
+      }
+    },
+    {
+      "case_id": "O021",
+      "product_id": "4923715287",
+      "queries": {
+        "stopwords": "books filipino heroes 32 pages",
+        "stopwords_no_price": "books filipino heroes 32 pages"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 205.82,
+        "stopwords_no_price": 161.74
+      }
+    },
+    {
+      "case_id": "O022",
+      "product_id": "3384055397",
+      "queries": {
+        "stopwords": "wide neck feeding bottle accessories 2 55",
+        "stopwords_no_price": "wide neck feeding bottle accessories"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 2627.87,
+        "stopwords_no_price": 1819.04
+      }
+    },
+    {
+      "case_id": "O023",
+      "product_id": "3276108472",
+      "queries": {
+        "stopwords": "cream color foot care free delivery 12",
+        "stopwords_no_price": "cream color foot care free delivery"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 2310.69,
+        "stopwords_no_price": 2113.46
+      }
+    },
+    {
+      "case_id": "O024",
+      "product_id": "4830625310",
+      "queries": {
+        "stopwords": "vinyl stickers 12",
+        "stopwords_no_price": "vinyl stickers"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 401.32,
+        "stopwords_no_price": 141.0
+      }
+    },
+    {
+      "case_id": "O025",
+      "product_id": "2724987068",
+      "queries": {
+        "stopwords": "radiator tank ford vehicles complimentary shipping 517 1423",
+        "stopwords_no_price": "radiator tank ford vehicles complimentary shipping"
+      },
+      "ranks": {
+        "stopwords": 53,
+        "stopwords_no_price": 53
+      },
+      "ms": {
+        "stopwords": 305.48,
+        "stopwords_no_price": 349.44
+      }
+    },
+    {
+      "case_id": "O026",
+      "product_id": "3375647714",
+      "queries": {
+        "stopwords": "writing pads premium paper modelled yellow 392 870",
+        "stopwords_no_price": "writing pads premium paper modelled yellow"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 608.41,
+        "stopwords_no_price": 592.07
+      }
+    },
+    {
+      "case_id": "O027",
+      "product_id": "3208112659",
+      "queries": {
+        "stopwords": "oval sunglasses champagne frame black color made plastic oem brand suitable both men women only free delivery lazflash deals",
+        "stopwords_no_price": "oval sunglasses champagne frame black color made plastic oem brand suitable both men women only free delivery lazflash deals"
+      },
+      "ranks": {
+        "stopwords": 44,
+        "stopwords_no_price": 44
+      },
+      "ms": {
+        "stopwords": 5518.78,
+        "stopwords_no_price": 5589.66
+      }
+    },
+    {
+      "case_id": "O028",
+      "product_id": "4772759631",
+      "queries": {
+        "stopwords": "baseball caps size a7 free delivery lazflash deals 44",
+        "stopwords_no_price": "baseball caps size a7 free delivery lazflash deals"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 1725.75,
+        "stopwords_no_price": 1899.94
+      }
+    },
+    {
+      "case_id": "O029",
+      "product_id": "3751077847",
+      "queries": {
+        "stopwords": "boat accessories specifically motor mount kit intex",
+        "stopwords_no_price": "boat accessories specifically motor mount kit intex"
+      },
+      "ranks": {
+        "stopwords": 2,
+        "stopwords_no_price": 2
+      },
+      "ms": {
+        "stopwords": 1495.85,
+        "stopwords_no_price": 1598.31
+      }
+    },
+    {
+      "case_id": "O030",
+      "product_id": "4360840584",
+      "queries": {
+        "stopwords": "badminton nets pre strung between 1191 2233",
+        "stopwords_no_price": "badminton nets pre strung"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 185.87,
+        "stopwords_no_price": 47.79
+      }
+    },
+    {
+      "case_id": "O031",
+      "product_id": "123249991",
+      "queries": {
+        "stopwords": "vent visors innova just 413",
+        "stopwords_no_price": "vent visors innova just"
+      },
+      "ranks": {
+        "stopwords": 14,
+        "stopwords_no_price": 14
+      },
+      "ms": {
+        "stopwords": 186.77,
+        "stopwords_no_price": 168.97
+      }
+    },
+    {
+      "case_id": "O032",
+      "product_id": "4113989812",
+      "queries": {
+        "stopwords": "ityaguy brand rear lights toyota fortuner lazflash deals between 717 1493",
+        "stopwords_no_price": "ityaguy brand rear lights toyota fortuner lazflash deals"
+      },
+      "ranks": {
+        "stopwords": 5,
+        "stopwords_no_price": 5
+      },
+      "ms": {
+        "stopwords": 2307.67,
+        "stopwords_no_price": 2219.45
+      }
+    },
+    {
+      "case_id": "O033",
+      "product_id": "3036882183",
+      "queries": {
+        "stopwords": "mustard plain crop top cowl neck made cotton spandex sexy petite style between 20 79",
+        "stopwords_no_price": "mustard plain crop top cowl neck made cotton spandex sexy petite style"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 2410.67,
+        "stopwords_no_price": 2083.36
+      }
+    },
+    {
+      "case_id": "O034",
+      "product_id": "4820574599",
+      "queries": {
+        "stopwords": "sign pens 0 5mm tip pack 12 13",
+        "stopwords_no_price": "sign pens 0 5mm tip pack 12"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 1108.18,
+        "stopwords_no_price": 1051.42
+      }
+    },
+    {
+      "case_id": "O035",
+      "product_id": "5013768817",
+      "queries": {
+        "stopwords": "honda screws lazmall free delivery more than 14",
+        "stopwords_no_price": "honda screws lazmall free delivery"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 1383.99,
+        "stopwords_no_price": 847.07
+      }
+    },
+    {
+      "case_id": "O036",
+      "product_id": "744842285",
+      "queries": {
+        "stopwords": "padlocks amerilock 30mm color family lazmall service between 44 152 door security type",
+        "stopwords_no_price": "padlocks amerilock 30mm color family lazmall service door security type"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 3169.9,
+        "stopwords_no_price": 3137.19
+      }
+    },
+    {
+      "case_id": "O037",
+      "product_id": "4700563765",
+      "queries": {
+        "stopwords": "clutch hub set motorstar bike",
+        "stopwords_no_price": "clutch hub set motorstar bike"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 575.0,
+        "stopwords_no_price": 466.35
+      }
+    },
+    {
+      "case_id": "O038",
+      "product_id": "4146179170",
+      "queries": {
+        "stopwords": "men s sandals size eu 43 color twist plain pattern casual style lazflash deals",
+        "stopwords_no_price": "men s sandals size eu 43 color twist plain pattern casual style lazflash deals"
+      },
+      "ranks": {
+        "stopwords": 2,
+        "stopwords_no_price": 2
+      },
+      "ms": {
+        "stopwords": 4417.92,
+        "stopwords_no_price": 4028.74
+      }
+    },
+    {
+      "case_id": "O039",
+      "product_id": "4656986397",
+      "queries": {
+        "stopwords": "waterproof foam roller yoga category lazflash deals",
+        "stopwords_no_price": "waterproof foam roller yoga category lazflash deals"
+      },
+      "ranks": {
+        "stopwords": 5,
+        "stopwords_no_price": 5
+      },
+      "ms": {
+        "stopwords": 638.93,
+        "stopwords_no_price": 488.98
+      }
+    },
+    {
+      "case_id": "O040",
+      "product_id": "4430454763",
+      "queries": {
+        "stopwords": "5 inch stainless steel hasp door security free delivery between 7 38",
+        "stopwords_no_price": "5 inch stainless steel hasp door security free delivery"
+      },
+      "ranks": {
+        "stopwords": 6,
+        "stopwords_no_price": 6
+      },
+      "ms": {
+        "stopwords": 2686.42,
+        "stopwords_no_price": 2114.48
+      }
+    },
+    {
+      "case_id": "O041",
+      "product_id": "2584247767",
+      "queries": {
+        "stopwords": "organic cooking sauce china imported brand 7 day guarantee",
+        "stopwords_no_price": "organic cooking sauce china imported brand 7 day guarantee"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 2466.2,
+        "stopwords_no_price": 2585.3
+      }
+    },
+    {
+      "case_id": "O042",
+      "product_id": "5088726186",
+      "queries": {
+        "stopwords": "carbon fiber pickleball paddles complimentary shipping between 402 2395",
+        "stopwords_no_price": "carbon fiber pickleball paddles complimentary shipping"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 405.31,
+        "stopwords_no_price": 313.59
+      }
+    },
+    {
+      "case_id": "O043",
+      "product_id": "3755560126",
+      "queries": {
+        "stopwords": "men s polo shirt beige size large made cotton plain pattern v neckline prefer korean style regular fit model 119 short sleeves korea only piece should between 160 351",
+        "stopwords_no_price": "men s polo shirt beige size large made cotton plain pattern v neckline prefer korean style regular fit model 119 short sleeves korea only piece"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 6136.55,
+        "stopwords_no_price": 6240.07
+      }
+    },
+    {
+      "case_id": "O044",
+      "product_id": "4463006931",
+      "queries": {
+        "stopwords": "pig themed coin banks 30",
+        "stopwords_no_price": "pig themed coin banks"
+      },
+      "ranks": {
+        "stopwords": 11,
+        "stopwords_no_price": 11
+      },
+      "ms": {
+        "stopwords": 265.45,
+        "stopwords_no_price": 41.25
+      }
+    },
+    {
+      "case_id": "O045",
+      "product_id": "3469779815",
+      "queries": {
+        "stopwords": "premium hand foot lotion scd perfect care skin model 2022 travel size pack glycolic acid preferred ingredient",
+        "stopwords_no_price": "premium hand foot lotion scd perfect care skin model 2022 travel size pack glycolic acid preferred ingredient"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 3734.18,
+        "stopwords_no_price": 3782.7
+      }
+    },
+    {
+      "case_id": "O046",
+      "product_id": "4689302202",
+      "queries": {
+        "stopwords": "baby wall stickers ranging 13 112",
+        "stopwords_no_price": "baby wall stickers"
+      },
+      "ranks": {
+        "stopwords": 43,
+        "stopwords_no_price": 26
+      },
+      "ms": {
+        "stopwords": 606.73,
+        "stopwords_no_price": 452.64
+      }
+    },
+    {
+      "case_id": "O047",
+      "product_id": "5088309584",
+      "queries": {
+        "stopwords": "alloy windshield honda adv150 made adi turbo 182 822",
+        "stopwords_no_price": "alloy windshield honda adv150 made adi turbo"
+      },
+      "ranks": {
+        "stopwords": 1,
+        "stopwords_no_price": 1
+      },
+      "ms": {
+        "stopwords": 745.97,
+        "stopwords_no_price": 698.22
+      }
+    },
+    {
+      "case_id": "O048",
+      "product_id": "4110807075",
+      "queries": {
+        "stopwords": "makeup organizers 6 tiers 11 206",
+        "stopwords_no_price": "makeup organizers 6 tiers"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 749.46,
+        "stopwords_no_price": 614.82
+      }
+    },
+    {
+      "case_id": "O049",
+      "product_id": "3552553721",
+      "queries": {
+        "stopwords": "headlight covers where 85",
+        "stopwords_no_price": "headlight covers where"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": null
+      },
+      "ms": {
+        "stopwords": 341.11,
+        "stopwords_no_price": 285.6
+      }
+    },
+    {
+      "case_id": "O050",
+      "product_id": "4155171655",
+      "queries": {
+        "stopwords": "shower protector 2 box size lazflash deals 142",
+        "stopwords_no_price": "shower protector 2 box size lazflash deals"
+      },
+      "ranks": {
+        "stopwords": null,
+        "stopwords_no_price": 71
+      },
+      "ms": {
+        "stopwords": 2192.92,
+        "stopwords_no_price": 2449.13
+      }
+    }
+  ]
+}

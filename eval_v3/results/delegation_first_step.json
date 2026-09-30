@@ -1,0 +1,150 @@
+{
+  "cases": 9,
+  "dual_delegate_rate": 1.0,
+  "rows": [
+    {
+      "case_id": "BX01",
+      "query": "帮我分别找一款无线鼠标和一款机械键盘，两种商品都加入购物车，不要下单。它们是独立的搜索任务，可以同时处理。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search for a wireless mouse. Return the best matching product with its real product ID, name, price, and key attributes (wireless connectivity, color, size). Respond in English product terms.\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search for a mechanical keyboard. Return the best matching product with its real product ID, name, price, and key attributes (mechanical switches, layout, color). Respond in English product terms.\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我将并行派发两个只读搜索任务，分别查找无线鼠标和机械键盘。"
+    },
+    {
+      "case_id": "BX02",
+      "query": "找一个 Tecno Camon 30 钢化膜，再找一款 Acer Aspire 笔记本电池，两件都加入购物车，不要下单。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search the product catalog for a tempered glass screen protector compatible with the Tecno Camon 30 smartphone. Keywords: \\\"Tecno Camon 30 tempered glass screen protector\\\". Return the best matching product IDs, titles, prices and key attributes. Do not modify any state.\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search the product catalog for a laptop battery for Acer Aspire laptops. Keywords: \\\"Acer Aspire laptop battery replacement\\\". Return the best matching product IDs, titles, prices and key attributes (voltage, capacity, compatible models). Do not modify any state.\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我先并行派出两个只读搜索：一个找 Tecno Camon 30 钢化膜，一个找 Acer Aspire 笔记本电池。"
+    },
+    {
+      "case_id": "BX03",
+      "query": "帮我找一件男士 T 恤和一个摩托车座套，两件都加进购物车，先别购买。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Find a men's T-shirt. Return up to 5 candidates with product_id, title, price, brand, color, size, key attributes. English corpus, use English keywords like \\\"men's t-shirt\\\".\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Find a motorcycle seat cover. Return up to 5 candidates with product_id, title, price, brand, color, size/fit, key attributes. English corpus, use English keywords like \\\"motorcycle seat cover\\\".\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我先后台并行查找男士 T 恤和摩托车座套两类商品，拿到候选后按您的要求加入购物车。"
+    },
+    {
+      "case_id": "BX04",
+      "query": "先查我目前购物车的状态，同时推荐一款蓝牙耳机；不要修改购物车，也不要下单。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"只读任务：读取当前用户的购物车状态（cart），返回购物车内的商品名称、数量、价格等完整信息。不要修改任何购物车内容，不要下单。\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"只读商品搜索：帮用户推荐一款蓝牙耳机（bluetooth earphones / wireless earbuds）。用户未指定预算、品牌、颜色，请返回最合适的候选商品列表，含商品名称、价格、关键特性。不要加购，不要下单。\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我先并行处理：一路读取购物车只读状态，一路搜索蓝牙耳机推荐。"
+    },
+    {
+      "case_id": "BX05",
+      "query": "先看看我有哪些历史订单，同时帮我找一款手机充电线；这次只查不买。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"读取当前买家的历史订单列表（orders）。只读操作，返回全部订单的真实 order_id、商品名称、金额、状态、下单时间等信息，不要修改任何内容。\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"搜索一款手机充电线（phone charging cable / USB charging cable）。只读搜索，返回候选商品的真实 product_id、名称、价格、关键属性。不要加购或下单。\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我先并行处理两件互不依赖的只读任务：读取历史订单，同时搜索手机充电线。"
+    },
+    {
+      "case_id": "BX06",
+      "query": "帮我同时比较一款无线鼠标和一款无线键盘，各给我至少一件商品，不要加入购物车或购买。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"搜索无线鼠标（wireless mouse）商品，至少返回 1 件（最好 2-3 件候选）。只读，不要加入购物车或下单。返回商品 ID、名称、价格、关键属性（连接方式、DPI、电池/续航、颜色、尺寸）。\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"搜索无线键盘（wireless keyboard）商品，至少返回 1 件（最好 2-3 件候选）。只读，不要加入购物车或下单。返回商品 ID、名称、价格、关键属性（连接方式、布局/键数、轴体或类型、电池/续航、颜色、尺寸）。\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我先并行检索无线鼠标和无线键盘两个品类。"
+    },
+    {
+      "case_id": "BP01",
+      "query": "请把找无线鼠标和找机械键盘作为两个互不依赖的只读子任务并行处理，各给我一个商品，不要加购或购买。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"只读任务：用 product_search 搜索一款无线鼠标（wireless mouse），返回 1 个最合适的商品，包含商品 ID、名称、价格和关键卖点。不要加购、不要购买、不要修改任何状态。\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"只读任务：用 product_search 搜索一款机械键盘（mechanical keyboard），返回 1 个最合适的商品，包含商品 ID、名称、价格和关键卖点。不要加购、不要购买、不要修改任何状态。\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我会把这两个互不依赖的只读搜索同时派发给两个 SearchAgent 并行执行。"
+    },
+    {
+      "case_id": "BP02",
+      "query": "请把查询 Tecno Camon 30 钢化膜和查询 Acer Aspire 电池作为两个互不依赖的 SearchAgent 任务同时派发，只展示结果，不下单。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search for a tempered glass screen protector for the Tecno Camon 30 smartphone. English query keywords: \\\"Tecno Camon 30 tempered glass screen protector\\\". Return candidate products with price, brand, and key attributes. Read-only, do not purchase or add to cart.\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search for a replacement battery for Acer Aspire laptops. English query keywords: \\\"Acer Aspire laptop replacement battery\\\". Return candidate products with price, brand, and key attributes. Read-only, do not purchase or add to cart.\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我先并行派发两个只读搜索任务：一个查 Tecno Camon 30 钢化膜，一个查 Acer Aspire 电池。"
+    },
+    {
+      "case_id": "BP03",
+      "query": "请并行委派两个独立的商品搜索：男士圆领 T 恤，以及摩托车座套；每类都给我商品，不要写入购物状态。",
+      "calls": [
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search for men's crew neck T-shirts. Keywords: \\\"men's crew neck t-shirt\\\". Category: apparel/t-shirts. Return top candidates with product_id, title, price, color, size, brand. Read-only, do not add to cart or modify any shopping state. Report the best matches.\"}"
+        },
+        {
+          "name": "delegate_search",
+          "arguments": "{\"task\": \"Search for motorcycle seat covers. Keywords: \\\"motorcycle seat cover\\\". Category: motorcycle accessories. Return top candidates with product_id, title, price, color, size, material. Read-only, do not add to cart or modify any shopping state. Report the best matches.\"}"
+        }
+      ],
+      "dual_delegate_first_step": true,
+      "content": "我将并行派发两个只读搜索任务：男士圆领 T 恤和摩托车座套，均不写入任何购物状态。"
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "50_turns": {
+    "samples": [
+      {
+        "turn": 1,
+        "estimated_tokens": 99,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 3.49
+      },
+      {
+        "turn": 2,
+        "estimated_tokens": 130,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 0.2
+      },
+      {
+        "turn": 3,
+        "estimated_tokens": 160,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 0.23
+      },
+      {
+        "turn": 4,
+        "estimated_tokens": 191,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 0.28
+      },
+      {
+        "turn": 5,
+        "estimated_tokens": 221,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 0.3
+      },
+      {
+        "turn": 6,
+        "estimated_tokens": 252,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 0.35
+      },
+      {
+        "turn": 7,
+        "estimated_tokens": 282,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 0.38
+      },
+      {
+        "turn": 8,
+        "estimated_tokens": 313,
+        "compacted_through_id": 0,
+        "compression_count": 0,
+        "monotonic": true,
+        "elapsed_ms": 0.44
+      },
+      {
+        "turn": 9,
+        "estimated_tokens": 335,
+        "compacted_through_id": 1,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1402.56
+      },
+      {
+        "turn": 10,
+        "estimated_tokens": 388,
+        "compacted_through_id": 2,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1232.55
+      },
+      {
+        "turn": 11,
+        "estimated_tokens": 388,
+        "compacted_through_id": 3,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 839.28
+      },
+      {
+        "turn": 12,
+        "estimated_tokens": 390,
+        "compacted_through_id": 4,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1332.94
+      },
+      {
+        "turn": 13,
+        "estimated_tokens": 390,
+        "compacted_through_id": 5,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1586.91
+      },
+      {
+        "turn": 14,
+        "estimated_tokens": 391,
+        "compacted_through_id": 6,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1379.27
+      },
+      {
+        "turn": 15,
+        "estimated_tokens": 389,
+        "compacted_through_id": 7,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1094.77
+      },
+      {
+        "turn": 16,
+        "estimated_tokens": 390,
+        "compacted_through_id": 8,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1024.2
+      },
+      {
+        "turn": 17,
+        "estimated_tokens": 390,
+        "compacted_through_id": 9,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1331.35
+      },
+      {
+        "turn": 18,
+        "estimated_tokens": 391,
+        "compacted_through_id": 10,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 894.74
+      },
+      {
+        "turn": 19,
+        "estimated_tokens": 391,
+        "compacted_through_id": 11,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 894.17
+      },
+      {
+        "turn": 20,
+        "estimated_tokens": 391,
+        "compacted_through_id": 12,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1074.7
+      },
+      {
+        "turn": 21,
+        "estimated_tokens": 391,
+        "compacted_through_id": 13,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1285.82
+      },
+      {
+        "turn": 22,
+        "estimated_tokens": 391,
+        "compacted_through_id": 14,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1386.46
+      },
+      {
+        "turn": 23,
+        "estimated_tokens": 391,
+        "compacted_through_id": 15,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1577.05
+      },
+      {
+        "turn": 24,
+        "estimated_tokens": 391,
+        "compacted_through_id": 16,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 983.12
+      },
+      {
+        "turn": 25,
+        "estimated_tokens": 383,
+        "compacted_through_id": 17,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1198.51
+      },
+      {
+        "turn": 26,
+        "estimated_tokens": 378,
+        "compacted_through_id": 18,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1775.37
+      },
+      {
+        "turn": 27,
+        "estimated_tokens": 373,
+        "compacted_through_id": 19,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 818.48
+      },
+      {
+        "turn": 28,
+        "estimated_tokens": 368,
+        "compacted_through_id": 20,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1158.24
+      },
+      {
+        "turn": 29,
+        "estimated_tokens": 366,
+        "compacted_through_id": 21,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1481.2
+      },
+      {
+        "turn": 30,
+        "estimated_tokens": 358,
+        "compacted_through_id": 22,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1348.21
+      },
+      {
+        "turn": 31,
+        "estimated_tokens": 353,
+        "compacted_through_id": 23,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1322.36
+      },
+      {
+        "turn": 32,
+        "estimated_tokens": 348,
+        "compacted_through_id": 24,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 724.04
+      },
+      {
+        "turn": 33,
+        "estimated_tokens": 330,
+        "compacted_through_id": 25,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 771.95
+      },
+      {
+        "turn": 34,
+        "estimated_tokens": 340,
+        "compacted_through_id": 26,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1262.69
+      },
+      {
+        "turn": 35,
+        "estimated_tokens": 338,
+        "compacted_through_id": 27,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1031.26
+      },
+      {
+        "turn": 36,
+        "estimated_tokens": 338,
+        "compacted_through_id": 28,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1265.7
+      },
+      {
+        "turn": 37,
+        "estimated_tokens": 341,
+        "compacted_through_id": 29,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1611.9
+      },
+      {
+        "turn": 38,
+        "estimated_tokens": 341,
+        "compacted_through_id": 30,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1104.3
+      },
+      {
+        "turn": 39,
+        "estimated_tokens": 341,
+        "compacted_through_id": 31,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1078.7
+      },
+      {
+        "turn": 40,
+        "estimated_tokens": 335,
+        "compacted_through_id": 32,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 930.24
+      },
+      {
+        "turn": 41,
+        "estimated_tokens": 336,
+        "compacted_through_id": 33,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1144.35
+      },
+      {
+        "turn": 42,
+        "estimated_tokens": 336,
+        "compacted_through_id": 34,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 959.84
+      },
+      {
+        "turn": 43,
+        "estimated_tokens": 336,
+        "compacted_through_id": 35,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1594.53
+      },
+      {
+        "turn": 44,
+        "estimated_tokens": 334,
+        "compacted_through_id": 36,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1502.81
+      },
+      {
+        "turn": 45,
+        "estimated_tokens": 334,
+        "compacted_through_id": 37,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 874.5
+      },
+      {
+        "turn": 46,
+        "estimated_tokens": 334,
+        "compacted_through_id": 38,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1595.69
+      },
+      {
+        "turn": 47,
+        "estimated_tokens": 332,
+        "compacted_through_id": 39,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 903.42
+      },
+      {
+        "turn": 48,
+        "estimated_tokens": 332,
+        "compacted_through_id": 40,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 1131.02
+      },
+      {
+        "turn": 49,
+        "estimated_tokens": 332,
+        "compacted_through_id": 41,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 793.0
+      },
+      {
+        "turn": 50,
+        "estimated_tokens": 332,
+        "compacted_through_id": 42,
+        "compression_count": 1,
+        "monotonic": true,
+        "elapsed_ms": 982.86
+      }
+    ],
+    "final_summary": "用户想买机械键盘，预算400元，必须无线，品牌首选罗技。第42轮仍在继续比较商品，明确暂时不要下单，尚未选定具体商品，无其他未完成请求。",
+    "final_answer": "400元",
+    "latest_budget_correct": true,
+    "positions_monotonic": true,
+    "compression_calls": 42,
+    "first10_max_tokens": 388,
+    "last10_max_tokens": 336
+  },
+  "token_budget": {
+    "raw_estimated_tokens": 2728,
+    "after_estimated_tokens": 1950,
+    "triggered": true,
+    "within_budget": true,
+    "old_fact_kept": true,
+    "summary": "用户要购买背包，明确必须能装 15 英寸电脑。用户要求继续比较，并多次强调需核实材质、重量和配送条件。目前未提供预算、品牌偏好、已比较或已选商品；未完成请求是继续比较并核实上述条件。"
+  }
+}

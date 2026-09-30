@@ -1,0 +1,49 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Local agent/editor state
+.workbuddy-ai/
+.agents/
+
+# Runtime data, databases, indexes and downloaded model weights
+data/
+documents.jsonl.gz
+documents.jsonl.gz.part
+documents.part*.jsonl.gz
+*.faiss
+*.safetensors
+*.pt
+*.pth
+*.pid
+*.port
+
+# Generated offline build artifacts
+offline_embedding/kaggle_bundle.zip
+offline_embedding/**/checkpoints/
+
+# Runtime logs/reports and temporary evaluation databases
+reports/
+*.log
+*.mp4
+*.mov
+eval_v*/results/**/*.sqlite3
+eval_v*/results/*.sqlite3
+
+# Generic temporary/build files
+*.tmp
+*.temp
+*.bak
+*.orig
+*~
+build/
+dist/

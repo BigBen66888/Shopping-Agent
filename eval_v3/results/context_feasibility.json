@@ -1,0 +1,50 @@
+{
+  "CM01_target1": {
+    "count": 154,
+    "example": {
+      "product_id": "4562670369",
+      "title": "Original Logitech M650 M650L wireless mouse M750  Bluetooth Office Mouse Support multi -device",
+      "price": 767.04
+    }
+  },
+  "CM02_target1": {
+    "count": 144,
+    "example": {
+      "product_id": "3996676431",
+      "title": "【3 Months Warranty】Sony WH-1000XM5 / WH1000XM5 Wireless Noise Cancelling Headphones IOS/Android Type-C Charging Headset",
+      "price": 639.0
+    }
+  },
+  "CM03_target1": {
+    "count": 1269,
+    "example": {
+      "product_id": "5082338499",
+      "title": "BELINDA PREMIER Backpack For Women Premium Leather Korean Fashion Office Mini School Backpack BP3305",
+      "price": 666.0
+    }
+  },
+  "CM04_target1": {
+    "count": 32,
+    "example": {
+      "product_id": "4213916091",
+      "title": "60% Wireless Mechanical Keyboard Bluetooth Dual Mode Hot-Swappable Mini 68-Key Red Switch for PC PS4 Xbox iPhone iPad",
+      "price": 945.13
+    }
+  },
+  "CM05_target1": {
+    "count": 218,
+    "example": {
+      "product_id": "5076897007",
+      "title": "TALONGAMES Mouse Grip Tape SnowPattern For Logitech G PRO X Superlight / G PRO X 2 WirelessPalm Sweat AbsorptionAnti-Slip Tape",
+      "price": 1281.0
+    }
+  },
+  "CM05_target2": {
+    "count": 1028,
+    "example": {
+      "product_id": "3465590236",
+      "title": "Amerteer Mechanical Keyboard Switch Stem Picker Holder IC Claw switch stem-lubing session hold beads outemu gateron AKKO TTC Cherry Kailu box feker",
+      "price": 88.0
+    }
+  }
+}
