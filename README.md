@@ -8,7 +8,7 @@
 
 ## 演示
 
-[▶ 点击播放 Shopping Agent 网页界面演示视频](./演示视频.mp4)
+https://github.com/user-attachments/assets/01bdc7de-10bd-45b3-8c10-b66a2214f871
 
 ## 功能概览
 
