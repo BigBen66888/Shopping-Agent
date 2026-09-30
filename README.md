@@ -8,9 +8,7 @@
 
 ## 演示
 
-![Shopping Agent 网页界面演示](./演示gif.gif)
-
-GIF 由本地原始录屏转换；仓库只保留压缩后的演示 GIF，不上传原始 MP4。
+[▶ 点击播放 Shopping Agent 网页界面演示视频](./演示视频.mp4)
 
 ## 功能概览
 

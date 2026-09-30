@@ -35,6 +35,7 @@ offline_embedding/**/checkpoints/
 reports/
 *.log
 *.mp4
+!演示视频.mp4
 *.mov
 eval_v*/results/**/*.sqlite3
 eval_v*/results/*.sqlite3
